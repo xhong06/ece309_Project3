@@ -1,3 +1,0 @@
-- buy milk
-- write hash table
-- finish ECE 309 project 3
