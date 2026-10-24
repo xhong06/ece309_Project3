@@ -1,0 +1,97 @@
+{
+	"configurations" : 
+	[
+		{
+			"abstractTargets" : [],
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-9ad1a58d4644cf6543fa.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "MiniHarness",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "harness_core::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-harness_core-5e64105ada2a679d3930.json",
+					"name" : "harness_core",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "miniharness::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-miniharness-a6f6f01288b9446ab324.json",
+					"name" : "miniharness",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_loop::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_loop-966849c39ec421d767a4.json",
+					"name" : "test_loop",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_p2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_p2-9869507fb85646c231cf.json",
+					"name" : "test_p2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_p3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_p3-962b61a534d11e3aadb3.json",
+					"name" : "test_p3",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/xande/projects/Project3/P3_starter/build",
+		"source" : "/home/xande/projects/Project3/P3_starter"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	}
+}

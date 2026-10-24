@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20261024-1508-Experimental"
+	Name="(empty)"
+	Generator="ctest-4.2.3"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="Linux"
+	Hostname="XHong-Laptop"
+	OSRelease="6.18.33.2-microsoft-standard-WSL2"
+	OSVersion="#1 SMP PREEMPT_DYNAMIC Thu Jun 18 21:54:43 UTC 2026"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="186"
+	ModelName="13th Gen Intel(R) Core(TM) i7-13700H"
+	ProcessorCacheSize="24576"
+	NumberOfLogicalCPU="20"
+	NumberOfPhysicalCPU="10"
+	TotalVirtualMemory="8192"
+	TotalPhysicalMemory="31932"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="2918.4"
+	>
+	<Testing>
+		<StartDateTime>Oct 24 12:37 EDT</StartDateTime>
+		<StartTestTime>1792859822</StartTestTime>
+		<TestList/>
+		<EndDateTime>Oct 24 12:37 EDT</EndDateTime>
+		<EndTestTime>1792859822</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

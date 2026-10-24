@@ -70,8 +70,6 @@ private:
     std::vector<std::vector<std::unique_ptr<Tool>>>         buckets_;
     // The number of tools currently registered in the hash table. This helps compute the load factor and determine when to rehash.
     std::size_t                                             size_;
-    // The max load factor threshold for the hash table. When the number of tools divided by the number of buckets exceeds this threshold, the table will be rehashed to a larger size.
-    double                                                  max_load_factor_;
     // Computes the index of the bucket for a given key using the hash function and the current number of buckets. This is used to determine where to store or look for a tool in the hash table.
     std::size_t             index_for(std::string_view key) const;
     // This function is called when the load factor exceeds the max_load_factor_. It creates a new set of buckets with the specified new_buckets_count, 

@@ -76,239 +76,239 @@ CMakeFiles/harness_core.dir/src/core/conversation.cpp.o: CMakeFiles/harness_core
 CMakeFiles/harness_core.dir/src/core/conversation.cpp.o: /home/xande/projects/Project3/P3_starter/src/core/conversation.cpp
 CMakeFiles/harness_core.dir/src/core/conversation.cpp.o: CMakeFiles/harness_core.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xande/projects/Project3/P3_starter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/harness_core.dir/src/core/conversation.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/harness_core.dir/src/core/conversation.cpp.o -MF CMakeFiles/harness_core.dir/src/core/conversation.cpp.o.d -o CMakeFiles/harness_core.dir/src/core/conversation.cpp.o -c /home/xande/projects/Project3/P3_starter/src/core/conversation.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/harness_core.dir/src/core/conversation.cpp.o -MF CMakeFiles/harness_core.dir/src/core/conversation.cpp.o.d -o CMakeFiles/harness_core.dir/src/core/conversation.cpp.o -c /home/xande/projects/Project3/P3_starter/src/core/conversation.cpp
 
 CMakeFiles/harness_core.dir/src/core/conversation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/harness_core.dir/src/core/conversation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xande/projects/Project3/P3_starter/src/core/conversation.cpp > CMakeFiles/harness_core.dir/src/core/conversation.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xande/projects/Project3/P3_starter/src/core/conversation.cpp > CMakeFiles/harness_core.dir/src/core/conversation.cpp.i
 
 CMakeFiles/harness_core.dir/src/core/conversation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/harness_core.dir/src/core/conversation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xande/projects/Project3/P3_starter/src/core/conversation.cpp -o CMakeFiles/harness_core.dir/src/core/conversation.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xande/projects/Project3/P3_starter/src/core/conversation.cpp -o CMakeFiles/harness_core.dir/src/core/conversation.cpp.s
 
 CMakeFiles/harness_core.dir/src/core/sentinel_scanner.cpp.o: CMakeFiles/harness_core.dir/flags.make
 CMakeFiles/harness_core.dir/src/core/sentinel_scanner.cpp.o: /home/xande/projects/Project3/P3_starter/src/core/sentinel_scanner.cpp
 CMakeFiles/harness_core.dir/src/core/sentinel_scanner.cpp.o: CMakeFiles/harness_core.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xande/projects/Project3/P3_starter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/harness_core.dir/src/core/sentinel_scanner.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/harness_core.dir/src/core/sentinel_scanner.cpp.o -MF CMakeFiles/harness_core.dir/src/core/sentinel_scanner.cpp.o.d -o CMakeFiles/harness_core.dir/src/core/sentinel_scanner.cpp.o -c /home/xande/projects/Project3/P3_starter/src/core/sentinel_scanner.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/harness_core.dir/src/core/sentinel_scanner.cpp.o -MF CMakeFiles/harness_core.dir/src/core/sentinel_scanner.cpp.o.d -o CMakeFiles/harness_core.dir/src/core/sentinel_scanner.cpp.o -c /home/xande/projects/Project3/P3_starter/src/core/sentinel_scanner.cpp
 
 CMakeFiles/harness_core.dir/src/core/sentinel_scanner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/harness_core.dir/src/core/sentinel_scanner.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xande/projects/Project3/P3_starter/src/core/sentinel_scanner.cpp > CMakeFiles/harness_core.dir/src/core/sentinel_scanner.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xande/projects/Project3/P3_starter/src/core/sentinel_scanner.cpp > CMakeFiles/harness_core.dir/src/core/sentinel_scanner.cpp.i
 
 CMakeFiles/harness_core.dir/src/core/sentinel_scanner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/harness_core.dir/src/core/sentinel_scanner.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xande/projects/Project3/P3_starter/src/core/sentinel_scanner.cpp -o CMakeFiles/harness_core.dir/src/core/sentinel_scanner.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xande/projects/Project3/P3_starter/src/core/sentinel_scanner.cpp -o CMakeFiles/harness_core.dir/src/core/sentinel_scanner.cpp.s
 
 CMakeFiles/harness_core.dir/src/tools/tool_registry.cpp.o: CMakeFiles/harness_core.dir/flags.make
 CMakeFiles/harness_core.dir/src/tools/tool_registry.cpp.o: /home/xande/projects/Project3/P3_starter/src/tools/tool_registry.cpp
 CMakeFiles/harness_core.dir/src/tools/tool_registry.cpp.o: CMakeFiles/harness_core.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xande/projects/Project3/P3_starter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/harness_core.dir/src/tools/tool_registry.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/harness_core.dir/src/tools/tool_registry.cpp.o -MF CMakeFiles/harness_core.dir/src/tools/tool_registry.cpp.o.d -o CMakeFiles/harness_core.dir/src/tools/tool_registry.cpp.o -c /home/xande/projects/Project3/P3_starter/src/tools/tool_registry.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/harness_core.dir/src/tools/tool_registry.cpp.o -MF CMakeFiles/harness_core.dir/src/tools/tool_registry.cpp.o.d -o CMakeFiles/harness_core.dir/src/tools/tool_registry.cpp.o -c /home/xande/projects/Project3/P3_starter/src/tools/tool_registry.cpp
 
 CMakeFiles/harness_core.dir/src/tools/tool_registry.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/harness_core.dir/src/tools/tool_registry.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xande/projects/Project3/P3_starter/src/tools/tool_registry.cpp > CMakeFiles/harness_core.dir/src/tools/tool_registry.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xande/projects/Project3/P3_starter/src/tools/tool_registry.cpp > CMakeFiles/harness_core.dir/src/tools/tool_registry.cpp.i
 
 CMakeFiles/harness_core.dir/src/tools/tool_registry.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/harness_core.dir/src/tools/tool_registry.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xande/projects/Project3/P3_starter/src/tools/tool_registry.cpp -o CMakeFiles/harness_core.dir/src/tools/tool_registry.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xande/projects/Project3/P3_starter/src/tools/tool_registry.cpp -o CMakeFiles/harness_core.dir/src/tools/tool_registry.cpp.s
 
 CMakeFiles/harness_core.dir/src/tools/workspace.cpp.o: CMakeFiles/harness_core.dir/flags.make
 CMakeFiles/harness_core.dir/src/tools/workspace.cpp.o: /home/xande/projects/Project3/P3_starter/src/tools/workspace.cpp
 CMakeFiles/harness_core.dir/src/tools/workspace.cpp.o: CMakeFiles/harness_core.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xande/projects/Project3/P3_starter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/harness_core.dir/src/tools/workspace.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/harness_core.dir/src/tools/workspace.cpp.o -MF CMakeFiles/harness_core.dir/src/tools/workspace.cpp.o.d -o CMakeFiles/harness_core.dir/src/tools/workspace.cpp.o -c /home/xande/projects/Project3/P3_starter/src/tools/workspace.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/harness_core.dir/src/tools/workspace.cpp.o -MF CMakeFiles/harness_core.dir/src/tools/workspace.cpp.o.d -o CMakeFiles/harness_core.dir/src/tools/workspace.cpp.o -c /home/xande/projects/Project3/P3_starter/src/tools/workspace.cpp
 
 CMakeFiles/harness_core.dir/src/tools/workspace.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/harness_core.dir/src/tools/workspace.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xande/projects/Project3/P3_starter/src/tools/workspace.cpp > CMakeFiles/harness_core.dir/src/tools/workspace.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xande/projects/Project3/P3_starter/src/tools/workspace.cpp > CMakeFiles/harness_core.dir/src/tools/workspace.cpp.i
 
 CMakeFiles/harness_core.dir/src/tools/workspace.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/harness_core.dir/src/tools/workspace.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xande/projects/Project3/P3_starter/src/tools/workspace.cpp -o CMakeFiles/harness_core.dir/src/tools/workspace.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xande/projects/Project3/P3_starter/src/tools/workspace.cpp -o CMakeFiles/harness_core.dir/src/tools/workspace.cpp.s
 
 CMakeFiles/harness_core.dir/src/tools/calculator_eval.cpp.o: CMakeFiles/harness_core.dir/flags.make
 CMakeFiles/harness_core.dir/src/tools/calculator_eval.cpp.o: /home/xande/projects/Project3/P3_starter/src/tools/calculator_eval.cpp
 CMakeFiles/harness_core.dir/src/tools/calculator_eval.cpp.o: CMakeFiles/harness_core.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xande/projects/Project3/P3_starter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/harness_core.dir/src/tools/calculator_eval.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/harness_core.dir/src/tools/calculator_eval.cpp.o -MF CMakeFiles/harness_core.dir/src/tools/calculator_eval.cpp.o.d -o CMakeFiles/harness_core.dir/src/tools/calculator_eval.cpp.o -c /home/xande/projects/Project3/P3_starter/src/tools/calculator_eval.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/harness_core.dir/src/tools/calculator_eval.cpp.o -MF CMakeFiles/harness_core.dir/src/tools/calculator_eval.cpp.o.d -o CMakeFiles/harness_core.dir/src/tools/calculator_eval.cpp.o -c /home/xande/projects/Project3/P3_starter/src/tools/calculator_eval.cpp
 
 CMakeFiles/harness_core.dir/src/tools/calculator_eval.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/harness_core.dir/src/tools/calculator_eval.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xande/projects/Project3/P3_starter/src/tools/calculator_eval.cpp > CMakeFiles/harness_core.dir/src/tools/calculator_eval.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xande/projects/Project3/P3_starter/src/tools/calculator_eval.cpp > CMakeFiles/harness_core.dir/src/tools/calculator_eval.cpp.i
 
 CMakeFiles/harness_core.dir/src/tools/calculator_eval.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/harness_core.dir/src/tools/calculator_eval.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xande/projects/Project3/P3_starter/src/tools/calculator_eval.cpp -o CMakeFiles/harness_core.dir/src/tools/calculator_eval.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xande/projects/Project3/P3_starter/src/tools/calculator_eval.cpp -o CMakeFiles/harness_core.dir/src/tools/calculator_eval.cpp.s
 
 CMakeFiles/harness_core.dir/src/json/json_value.cpp.o: CMakeFiles/harness_core.dir/flags.make
 CMakeFiles/harness_core.dir/src/json/json_value.cpp.o: /home/xande/projects/Project3/P3_starter/src/json/json_value.cpp
 CMakeFiles/harness_core.dir/src/json/json_value.cpp.o: CMakeFiles/harness_core.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xande/projects/Project3/P3_starter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/harness_core.dir/src/json/json_value.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/harness_core.dir/src/json/json_value.cpp.o -MF CMakeFiles/harness_core.dir/src/json/json_value.cpp.o.d -o CMakeFiles/harness_core.dir/src/json/json_value.cpp.o -c /home/xande/projects/Project3/P3_starter/src/json/json_value.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/harness_core.dir/src/json/json_value.cpp.o -MF CMakeFiles/harness_core.dir/src/json/json_value.cpp.o.d -o CMakeFiles/harness_core.dir/src/json/json_value.cpp.o -c /home/xande/projects/Project3/P3_starter/src/json/json_value.cpp
 
 CMakeFiles/harness_core.dir/src/json/json_value.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/harness_core.dir/src/json/json_value.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xande/projects/Project3/P3_starter/src/json/json_value.cpp > CMakeFiles/harness_core.dir/src/json/json_value.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xande/projects/Project3/P3_starter/src/json/json_value.cpp > CMakeFiles/harness_core.dir/src/json/json_value.cpp.i
 
 CMakeFiles/harness_core.dir/src/json/json_value.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/harness_core.dir/src/json/json_value.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xande/projects/Project3/P3_starter/src/json/json_value.cpp -o CMakeFiles/harness_core.dir/src/json/json_value.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xande/projects/Project3/P3_starter/src/json/json_value.cpp -o CMakeFiles/harness_core.dir/src/json/json_value.cpp.s
 
 CMakeFiles/harness_core.dir/src/tools/workspace_provided.cpp.o: CMakeFiles/harness_core.dir/flags.make
 CMakeFiles/harness_core.dir/src/tools/workspace_provided.cpp.o: /home/xande/projects/Project3/P3_starter/src/tools/workspace_provided.cpp
 CMakeFiles/harness_core.dir/src/tools/workspace_provided.cpp.o: CMakeFiles/harness_core.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xande/projects/Project3/P3_starter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/harness_core.dir/src/tools/workspace_provided.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/harness_core.dir/src/tools/workspace_provided.cpp.o -MF CMakeFiles/harness_core.dir/src/tools/workspace_provided.cpp.o.d -o CMakeFiles/harness_core.dir/src/tools/workspace_provided.cpp.o -c /home/xande/projects/Project3/P3_starter/src/tools/workspace_provided.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/harness_core.dir/src/tools/workspace_provided.cpp.o -MF CMakeFiles/harness_core.dir/src/tools/workspace_provided.cpp.o.d -o CMakeFiles/harness_core.dir/src/tools/workspace_provided.cpp.o -c /home/xande/projects/Project3/P3_starter/src/tools/workspace_provided.cpp
 
 CMakeFiles/harness_core.dir/src/tools/workspace_provided.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/harness_core.dir/src/tools/workspace_provided.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xande/projects/Project3/P3_starter/src/tools/workspace_provided.cpp > CMakeFiles/harness_core.dir/src/tools/workspace_provided.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xande/projects/Project3/P3_starter/src/tools/workspace_provided.cpp > CMakeFiles/harness_core.dir/src/tools/workspace_provided.cpp.i
 
 CMakeFiles/harness_core.dir/src/tools/workspace_provided.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/harness_core.dir/src/tools/workspace_provided.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xande/projects/Project3/P3_starter/src/tools/workspace_provided.cpp -o CMakeFiles/harness_core.dir/src/tools/workspace_provided.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xande/projects/Project3/P3_starter/src/tools/workspace_provided.cpp -o CMakeFiles/harness_core.dir/src/tools/workspace_provided.cpp.s
 
 CMakeFiles/harness_core.dir/src/tools/calculator_tokenize.cpp.o: CMakeFiles/harness_core.dir/flags.make
 CMakeFiles/harness_core.dir/src/tools/calculator_tokenize.cpp.o: /home/xande/projects/Project3/P3_starter/src/tools/calculator_tokenize.cpp
 CMakeFiles/harness_core.dir/src/tools/calculator_tokenize.cpp.o: CMakeFiles/harness_core.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xande/projects/Project3/P3_starter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/harness_core.dir/src/tools/calculator_tokenize.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/harness_core.dir/src/tools/calculator_tokenize.cpp.o -MF CMakeFiles/harness_core.dir/src/tools/calculator_tokenize.cpp.o.d -o CMakeFiles/harness_core.dir/src/tools/calculator_tokenize.cpp.o -c /home/xande/projects/Project3/P3_starter/src/tools/calculator_tokenize.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/harness_core.dir/src/tools/calculator_tokenize.cpp.o -MF CMakeFiles/harness_core.dir/src/tools/calculator_tokenize.cpp.o.d -o CMakeFiles/harness_core.dir/src/tools/calculator_tokenize.cpp.o -c /home/xande/projects/Project3/P3_starter/src/tools/calculator_tokenize.cpp
 
 CMakeFiles/harness_core.dir/src/tools/calculator_tokenize.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/harness_core.dir/src/tools/calculator_tokenize.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xande/projects/Project3/P3_starter/src/tools/calculator_tokenize.cpp > CMakeFiles/harness_core.dir/src/tools/calculator_tokenize.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xande/projects/Project3/P3_starter/src/tools/calculator_tokenize.cpp > CMakeFiles/harness_core.dir/src/tools/calculator_tokenize.cpp.i
 
 CMakeFiles/harness_core.dir/src/tools/calculator_tokenize.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/harness_core.dir/src/tools/calculator_tokenize.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xande/projects/Project3/P3_starter/src/tools/calculator_tokenize.cpp -o CMakeFiles/harness_core.dir/src/tools/calculator_tokenize.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xande/projects/Project3/P3_starter/src/tools/calculator_tokenize.cpp -o CMakeFiles/harness_core.dir/src/tools/calculator_tokenize.cpp.s
 
 CMakeFiles/harness_core.dir/src/tools/calculator_tool.cpp.o: CMakeFiles/harness_core.dir/flags.make
 CMakeFiles/harness_core.dir/src/tools/calculator_tool.cpp.o: /home/xande/projects/Project3/P3_starter/src/tools/calculator_tool.cpp
 CMakeFiles/harness_core.dir/src/tools/calculator_tool.cpp.o: CMakeFiles/harness_core.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xande/projects/Project3/P3_starter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/harness_core.dir/src/tools/calculator_tool.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/harness_core.dir/src/tools/calculator_tool.cpp.o -MF CMakeFiles/harness_core.dir/src/tools/calculator_tool.cpp.o.d -o CMakeFiles/harness_core.dir/src/tools/calculator_tool.cpp.o -c /home/xande/projects/Project3/P3_starter/src/tools/calculator_tool.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/harness_core.dir/src/tools/calculator_tool.cpp.o -MF CMakeFiles/harness_core.dir/src/tools/calculator_tool.cpp.o.d -o CMakeFiles/harness_core.dir/src/tools/calculator_tool.cpp.o -c /home/xande/projects/Project3/P3_starter/src/tools/calculator_tool.cpp
 
 CMakeFiles/harness_core.dir/src/tools/calculator_tool.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/harness_core.dir/src/tools/calculator_tool.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xande/projects/Project3/P3_starter/src/tools/calculator_tool.cpp > CMakeFiles/harness_core.dir/src/tools/calculator_tool.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xande/projects/Project3/P3_starter/src/tools/calculator_tool.cpp > CMakeFiles/harness_core.dir/src/tools/calculator_tool.cpp.i
 
 CMakeFiles/harness_core.dir/src/tools/calculator_tool.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/harness_core.dir/src/tools/calculator_tool.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xande/projects/Project3/P3_starter/src/tools/calculator_tool.cpp -o CMakeFiles/harness_core.dir/src/tools/calculator_tool.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xande/projects/Project3/P3_starter/src/tools/calculator_tool.cpp -o CMakeFiles/harness_core.dir/src/tools/calculator_tool.cpp.s
 
 CMakeFiles/harness_core.dir/src/tools/file_tools.cpp.o: CMakeFiles/harness_core.dir/flags.make
 CMakeFiles/harness_core.dir/src/tools/file_tools.cpp.o: /home/xande/projects/Project3/P3_starter/src/tools/file_tools.cpp
 CMakeFiles/harness_core.dir/src/tools/file_tools.cpp.o: CMakeFiles/harness_core.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xande/projects/Project3/P3_starter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/harness_core.dir/src/tools/file_tools.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/harness_core.dir/src/tools/file_tools.cpp.o -MF CMakeFiles/harness_core.dir/src/tools/file_tools.cpp.o.d -o CMakeFiles/harness_core.dir/src/tools/file_tools.cpp.o -c /home/xande/projects/Project3/P3_starter/src/tools/file_tools.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/harness_core.dir/src/tools/file_tools.cpp.o -MF CMakeFiles/harness_core.dir/src/tools/file_tools.cpp.o.d -o CMakeFiles/harness_core.dir/src/tools/file_tools.cpp.o -c /home/xande/projects/Project3/P3_starter/src/tools/file_tools.cpp
 
 CMakeFiles/harness_core.dir/src/tools/file_tools.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/harness_core.dir/src/tools/file_tools.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xande/projects/Project3/P3_starter/src/tools/file_tools.cpp > CMakeFiles/harness_core.dir/src/tools/file_tools.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xande/projects/Project3/P3_starter/src/tools/file_tools.cpp > CMakeFiles/harness_core.dir/src/tools/file_tools.cpp.i
 
 CMakeFiles/harness_core.dir/src/tools/file_tools.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/harness_core.dir/src/tools/file_tools.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xande/projects/Project3/P3_starter/src/tools/file_tools.cpp -o CMakeFiles/harness_core.dir/src/tools/file_tools.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xande/projects/Project3/P3_starter/src/tools/file_tools.cpp -o CMakeFiles/harness_core.dir/src/tools/file_tools.cpp.s
 
 CMakeFiles/harness_core.dir/src/tools/builtin_tools.cpp.o: CMakeFiles/harness_core.dir/flags.make
 CMakeFiles/harness_core.dir/src/tools/builtin_tools.cpp.o: /home/xande/projects/Project3/P3_starter/src/tools/builtin_tools.cpp
 CMakeFiles/harness_core.dir/src/tools/builtin_tools.cpp.o: CMakeFiles/harness_core.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xande/projects/Project3/P3_starter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/harness_core.dir/src/tools/builtin_tools.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/harness_core.dir/src/tools/builtin_tools.cpp.o -MF CMakeFiles/harness_core.dir/src/tools/builtin_tools.cpp.o.d -o CMakeFiles/harness_core.dir/src/tools/builtin_tools.cpp.o -c /home/xande/projects/Project3/P3_starter/src/tools/builtin_tools.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/harness_core.dir/src/tools/builtin_tools.cpp.o -MF CMakeFiles/harness_core.dir/src/tools/builtin_tools.cpp.o.d -o CMakeFiles/harness_core.dir/src/tools/builtin_tools.cpp.o -c /home/xande/projects/Project3/P3_starter/src/tools/builtin_tools.cpp
 
 CMakeFiles/harness_core.dir/src/tools/builtin_tools.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/harness_core.dir/src/tools/builtin_tools.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xande/projects/Project3/P3_starter/src/tools/builtin_tools.cpp > CMakeFiles/harness_core.dir/src/tools/builtin_tools.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xande/projects/Project3/P3_starter/src/tools/builtin_tools.cpp > CMakeFiles/harness_core.dir/src/tools/builtin_tools.cpp.i
 
 CMakeFiles/harness_core.dir/src/tools/builtin_tools.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/harness_core.dir/src/tools/builtin_tools.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xande/projects/Project3/P3_starter/src/tools/builtin_tools.cpp -o CMakeFiles/harness_core.dir/src/tools/builtin_tools.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xande/projects/Project3/P3_starter/src/tools/builtin_tools.cpp -o CMakeFiles/harness_core.dir/src/tools/builtin_tools.cpp.s
 
 CMakeFiles/harness_core.dir/src/harness/tool_dispatcher.cpp.o: CMakeFiles/harness_core.dir/flags.make
 CMakeFiles/harness_core.dir/src/harness/tool_dispatcher.cpp.o: /home/xande/projects/Project3/P3_starter/src/harness/tool_dispatcher.cpp
 CMakeFiles/harness_core.dir/src/harness/tool_dispatcher.cpp.o: CMakeFiles/harness_core.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xande/projects/Project3/P3_starter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/harness_core.dir/src/harness/tool_dispatcher.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/harness_core.dir/src/harness/tool_dispatcher.cpp.o -MF CMakeFiles/harness_core.dir/src/harness/tool_dispatcher.cpp.o.d -o CMakeFiles/harness_core.dir/src/harness/tool_dispatcher.cpp.o -c /home/xande/projects/Project3/P3_starter/src/harness/tool_dispatcher.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/harness_core.dir/src/harness/tool_dispatcher.cpp.o -MF CMakeFiles/harness_core.dir/src/harness/tool_dispatcher.cpp.o.d -o CMakeFiles/harness_core.dir/src/harness/tool_dispatcher.cpp.o -c /home/xande/projects/Project3/P3_starter/src/harness/tool_dispatcher.cpp
 
 CMakeFiles/harness_core.dir/src/harness/tool_dispatcher.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/harness_core.dir/src/harness/tool_dispatcher.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xande/projects/Project3/P3_starter/src/harness/tool_dispatcher.cpp > CMakeFiles/harness_core.dir/src/harness/tool_dispatcher.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xande/projects/Project3/P3_starter/src/harness/tool_dispatcher.cpp > CMakeFiles/harness_core.dir/src/harness/tool_dispatcher.cpp.i
 
 CMakeFiles/harness_core.dir/src/harness/tool_dispatcher.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/harness_core.dir/src/harness/tool_dispatcher.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xande/projects/Project3/P3_starter/src/harness/tool_dispatcher.cpp -o CMakeFiles/harness_core.dir/src/harness/tool_dispatcher.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xande/projects/Project3/P3_starter/src/harness/tool_dispatcher.cpp -o CMakeFiles/harness_core.dir/src/harness/tool_dispatcher.cpp.s
 
 CMakeFiles/harness_core.dir/src/harness/harness.cpp.o: CMakeFiles/harness_core.dir/flags.make
 CMakeFiles/harness_core.dir/src/harness/harness.cpp.o: /home/xande/projects/Project3/P3_starter/src/harness/harness.cpp
 CMakeFiles/harness_core.dir/src/harness/harness.cpp.o: CMakeFiles/harness_core.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xande/projects/Project3/P3_starter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/harness_core.dir/src/harness/harness.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/harness_core.dir/src/harness/harness.cpp.o -MF CMakeFiles/harness_core.dir/src/harness/harness.cpp.o.d -o CMakeFiles/harness_core.dir/src/harness/harness.cpp.o -c /home/xande/projects/Project3/P3_starter/src/harness/harness.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/harness_core.dir/src/harness/harness.cpp.o -MF CMakeFiles/harness_core.dir/src/harness/harness.cpp.o.d -o CMakeFiles/harness_core.dir/src/harness/harness.cpp.o -c /home/xande/projects/Project3/P3_starter/src/harness/harness.cpp
 
 CMakeFiles/harness_core.dir/src/harness/harness.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/harness_core.dir/src/harness/harness.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xande/projects/Project3/P3_starter/src/harness/harness.cpp > CMakeFiles/harness_core.dir/src/harness/harness.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xande/projects/Project3/P3_starter/src/harness/harness.cpp > CMakeFiles/harness_core.dir/src/harness/harness.cpp.i
 
 CMakeFiles/harness_core.dir/src/harness/harness.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/harness_core.dir/src/harness/harness.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xande/projects/Project3/P3_starter/src/harness/harness.cpp -o CMakeFiles/harness_core.dir/src/harness/harness.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xande/projects/Project3/P3_starter/src/harness/harness.cpp -o CMakeFiles/harness_core.dir/src/harness/harness.cpp.s
 
 CMakeFiles/harness_core.dir/src/harness/transcript.cpp.o: CMakeFiles/harness_core.dir/flags.make
 CMakeFiles/harness_core.dir/src/harness/transcript.cpp.o: /home/xande/projects/Project3/P3_starter/src/harness/transcript.cpp
 CMakeFiles/harness_core.dir/src/harness/transcript.cpp.o: CMakeFiles/harness_core.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xande/projects/Project3/P3_starter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/harness_core.dir/src/harness/transcript.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/harness_core.dir/src/harness/transcript.cpp.o -MF CMakeFiles/harness_core.dir/src/harness/transcript.cpp.o.d -o CMakeFiles/harness_core.dir/src/harness/transcript.cpp.o -c /home/xande/projects/Project3/P3_starter/src/harness/transcript.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/harness_core.dir/src/harness/transcript.cpp.o -MF CMakeFiles/harness_core.dir/src/harness/transcript.cpp.o.d -o CMakeFiles/harness_core.dir/src/harness/transcript.cpp.o -c /home/xande/projects/Project3/P3_starter/src/harness/transcript.cpp
 
 CMakeFiles/harness_core.dir/src/harness/transcript.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/harness_core.dir/src/harness/transcript.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xande/projects/Project3/P3_starter/src/harness/transcript.cpp > CMakeFiles/harness_core.dir/src/harness/transcript.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xande/projects/Project3/P3_starter/src/harness/transcript.cpp > CMakeFiles/harness_core.dir/src/harness/transcript.cpp.i
 
 CMakeFiles/harness_core.dir/src/harness/transcript.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/harness_core.dir/src/harness/transcript.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xande/projects/Project3/P3_starter/src/harness/transcript.cpp -o CMakeFiles/harness_core.dir/src/harness/transcript.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xande/projects/Project3/P3_starter/src/harness/transcript.cpp -o CMakeFiles/harness_core.dir/src/harness/transcript.cpp.s
 
 CMakeFiles/harness_core.dir/src/model/model_client.cpp.o: CMakeFiles/harness_core.dir/flags.make
 CMakeFiles/harness_core.dir/src/model/model_client.cpp.o: /home/xande/projects/Project3/P3_starter/src/model/model_client.cpp
 CMakeFiles/harness_core.dir/src/model/model_client.cpp.o: CMakeFiles/harness_core.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xande/projects/Project3/P3_starter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/harness_core.dir/src/model/model_client.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/harness_core.dir/src/model/model_client.cpp.o -MF CMakeFiles/harness_core.dir/src/model/model_client.cpp.o.d -o CMakeFiles/harness_core.dir/src/model/model_client.cpp.o -c /home/xande/projects/Project3/P3_starter/src/model/model_client.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/harness_core.dir/src/model/model_client.cpp.o -MF CMakeFiles/harness_core.dir/src/model/model_client.cpp.o.d -o CMakeFiles/harness_core.dir/src/model/model_client.cpp.o -c /home/xande/projects/Project3/P3_starter/src/model/model_client.cpp
 
 CMakeFiles/harness_core.dir/src/model/model_client.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/harness_core.dir/src/model/model_client.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xande/projects/Project3/P3_starter/src/model/model_client.cpp > CMakeFiles/harness_core.dir/src/model/model_client.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xande/projects/Project3/P3_starter/src/model/model_client.cpp > CMakeFiles/harness_core.dir/src/model/model_client.cpp.i
 
 CMakeFiles/harness_core.dir/src/model/model_client.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/harness_core.dir/src/model/model_client.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xande/projects/Project3/P3_starter/src/model/model_client.cpp -o CMakeFiles/harness_core.dir/src/model/model_client.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xande/projects/Project3/P3_starter/src/model/model_client.cpp -o CMakeFiles/harness_core.dir/src/model/model_client.cpp.s
 
 CMakeFiles/harness_core.dir/src/model/scripted_client.cpp.o: CMakeFiles/harness_core.dir/flags.make
 CMakeFiles/harness_core.dir/src/model/scripted_client.cpp.o: /home/xande/projects/Project3/P3_starter/src/model/scripted_client.cpp
 CMakeFiles/harness_core.dir/src/model/scripted_client.cpp.o: CMakeFiles/harness_core.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xande/projects/Project3/P3_starter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/harness_core.dir/src/model/scripted_client.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/harness_core.dir/src/model/scripted_client.cpp.o -MF CMakeFiles/harness_core.dir/src/model/scripted_client.cpp.o.d -o CMakeFiles/harness_core.dir/src/model/scripted_client.cpp.o -c /home/xande/projects/Project3/P3_starter/src/model/scripted_client.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/harness_core.dir/src/model/scripted_client.cpp.o -MF CMakeFiles/harness_core.dir/src/model/scripted_client.cpp.o.d -o CMakeFiles/harness_core.dir/src/model/scripted_client.cpp.o -c /home/xande/projects/Project3/P3_starter/src/model/scripted_client.cpp
 
 CMakeFiles/harness_core.dir/src/model/scripted_client.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/harness_core.dir/src/model/scripted_client.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xande/projects/Project3/P3_starter/src/model/scripted_client.cpp > CMakeFiles/harness_core.dir/src/model/scripted_client.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xande/projects/Project3/P3_starter/src/model/scripted_client.cpp > CMakeFiles/harness_core.dir/src/model/scripted_client.cpp.i
 
 CMakeFiles/harness_core.dir/src/model/scripted_client.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/harness_core.dir/src/model/scripted_client.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xande/projects/Project3/P3_starter/src/model/scripted_client.cpp -o CMakeFiles/harness_core.dir/src/model/scripted_client.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xande/projects/Project3/P3_starter/src/model/scripted_client.cpp -o CMakeFiles/harness_core.dir/src/model/scripted_client.cpp.s
 
 CMakeFiles/harness_core.dir/src/model/replay_client.cpp.o: CMakeFiles/harness_core.dir/flags.make
 CMakeFiles/harness_core.dir/src/model/replay_client.cpp.o: /home/xande/projects/Project3/P3_starter/src/model/replay_client.cpp
 CMakeFiles/harness_core.dir/src/model/replay_client.cpp.o: CMakeFiles/harness_core.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xande/projects/Project3/P3_starter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/harness_core.dir/src/model/replay_client.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/harness_core.dir/src/model/replay_client.cpp.o -MF CMakeFiles/harness_core.dir/src/model/replay_client.cpp.o.d -o CMakeFiles/harness_core.dir/src/model/replay_client.cpp.o -c /home/xande/projects/Project3/P3_starter/src/model/replay_client.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/harness_core.dir/src/model/replay_client.cpp.o -MF CMakeFiles/harness_core.dir/src/model/replay_client.cpp.o.d -o CMakeFiles/harness_core.dir/src/model/replay_client.cpp.o -c /home/xande/projects/Project3/P3_starter/src/model/replay_client.cpp
 
 CMakeFiles/harness_core.dir/src/model/replay_client.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/harness_core.dir/src/model/replay_client.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xande/projects/Project3/P3_starter/src/model/replay_client.cpp > CMakeFiles/harness_core.dir/src/model/replay_client.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xande/projects/Project3/P3_starter/src/model/replay_client.cpp > CMakeFiles/harness_core.dir/src/model/replay_client.cpp.i
 
 CMakeFiles/harness_core.dir/src/model/replay_client.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/harness_core.dir/src/model/replay_client.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xande/projects/Project3/P3_starter/src/model/replay_client.cpp -o CMakeFiles/harness_core.dir/src/model/replay_client.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xande/projects/Project3/P3_starter/src/model/replay_client.cpp -o CMakeFiles/harness_core.dir/src/model/replay_client.cpp.s
 
 # Object files for target harness_core
 harness_core_OBJECTS = \

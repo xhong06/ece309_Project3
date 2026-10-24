@@ -76,15 +76,15 @@ CMakeFiles/test_loop.dir/tests/p3/test_loop.cpp.o: CMakeFiles/test_loop.dir/flag
 CMakeFiles/test_loop.dir/tests/p3/test_loop.cpp.o: /home/xande/projects/Project3/P3_starter/tests/p3/test_loop.cpp
 CMakeFiles/test_loop.dir/tests/p3/test_loop.cpp.o: CMakeFiles/test_loop.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xande/projects/Project3/P3_starter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test_loop.dir/tests/p3/test_loop.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_loop.dir/tests/p3/test_loop.cpp.o -MF CMakeFiles/test_loop.dir/tests/p3/test_loop.cpp.o.d -o CMakeFiles/test_loop.dir/tests/p3/test_loop.cpp.o -c /home/xande/projects/Project3/P3_starter/tests/p3/test_loop.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_loop.dir/tests/p3/test_loop.cpp.o -MF CMakeFiles/test_loop.dir/tests/p3/test_loop.cpp.o.d -o CMakeFiles/test_loop.dir/tests/p3/test_loop.cpp.o -c /home/xande/projects/Project3/P3_starter/tests/p3/test_loop.cpp
 
 CMakeFiles/test_loop.dir/tests/p3/test_loop.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test_loop.dir/tests/p3/test_loop.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xande/projects/Project3/P3_starter/tests/p3/test_loop.cpp > CMakeFiles/test_loop.dir/tests/p3/test_loop.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xande/projects/Project3/P3_starter/tests/p3/test_loop.cpp > CMakeFiles/test_loop.dir/tests/p3/test_loop.cpp.i
 
 CMakeFiles/test_loop.dir/tests/p3/test_loop.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test_loop.dir/tests/p3/test_loop.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xande/projects/Project3/P3_starter/tests/p3/test_loop.cpp -o CMakeFiles/test_loop.dir/tests/p3/test_loop.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xande/projects/Project3/P3_starter/tests/p3/test_loop.cpp -o CMakeFiles/test_loop.dir/tests/p3/test_loop.cpp.s
 
 # Object files for target test_loop
 test_loop_OBJECTS = \
