@@ -7,7 +7,7 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-9ad1a58d4644cf6543fa.json",
+					"jsonFile" : "directory-.-Debug-9ad1a58d4644cf6543fa.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -24,7 +24,7 @@
 					]
 				}
 			],
-			"name" : "",
+			"name" : "Debug",
 			"projects" : 
 			[
 				{
@@ -48,35 +48,35 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "harness_core::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-harness_core-5e64105ada2a679d3930.json",
+					"jsonFile" : "target-harness_core-Debug-22e5f2f29df4c0c2c591.json",
 					"name" : "harness_core",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "miniharness::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-miniharness-a6f6f01288b9446ab324.json",
+					"jsonFile" : "target-miniharness-Debug-1075cecffd3952181b0a.json",
 					"name" : "miniharness",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "test_loop::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-test_loop-966849c39ec421d767a4.json",
+					"jsonFile" : "target-test_loop-Debug-d4d813dd7952ebb72661.json",
 					"name" : "test_loop",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "test_p2::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-test_p2-9869507fb85646c231cf.json",
+					"jsonFile" : "target-test_p2-Debug-5bc6119bebf1217b60ee.json",
 					"name" : "test_p2",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "test_p3::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-test_p3-962b61a534d11e3aadb3.json",
+					"jsonFile" : "target-test_p3-Debug-846071b8d75a9a30edd2.json",
 					"name" : "test_p3",
 					"projectIndex" : 0
 				}

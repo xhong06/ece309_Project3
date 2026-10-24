@@ -65,8 +65,12 @@ std::size_t ToolRegistry::size() const noexcept {
     return size_; // Return the number of tools registered in the hash table.
 }
 
-void ToolRegistry::for_each(const std::function<void(const Tool&)>& /*fn*/) const {
-    // TODO
+void ToolRegistry::for_each(const std::function<void(const Tool&)>& fn) const {
+    for(const auto& bucket : buckets_) { // Iterate through each bucket in the hash table
+        for(const auto& entry : bucket) { // Iterate through each tool in every bucket
+            fn(*entry); // call fn for each tool
+        }
+    }
 }
 
 std::size_t ToolRegistry::bucket_count() const noexcept {
@@ -80,5 +84,9 @@ double ToolRegistry::load_factor() const noexcept {
 }
 
 std::size_t ToolRegistry::max_probe_length() const {
-    return 0;   // TODO
+    std::size_t count = 0; // Set the inital longest length to 0.
+    for(const auto& bucket : buckets_) { // Check each bucket in hash table.
+        if(bucket.size() > count) count = bucket.size(); // If there is a bucket that is fuller than the previous ones, update count to the new tool count.
+    }
+    return count; // Return the longest count.
 }

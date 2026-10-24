@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "miniharness"
+			"path" : "test_loop"
 		}
 	],
 	"backtrace" : 1,
@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 74,
+				"line" : 88,
 				"parent" : 0
 			},
 			{
@@ -39,7 +39,7 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 75,
+				"line" : 89,
 				"parent" : 0
 			},
 			{
@@ -74,7 +74,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-std=c++17"
+					"fragment" : "-g -std=c++17"
 				},
 				{
 					"backtrace" : 4,
@@ -130,11 +130,15 @@
 			"id" : "harness_core::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "miniharness::@6890427a1f51a3e7e1df",
+	"id" : "test_loop::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
 		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
 			{
 				"backtrace" : 2,
 				"fragment" : "-fsanitize=address,undefined",
@@ -155,8 +159,8 @@
 			"id" : "harness_core::@6890427a1f51a3e7e1df"
 		}
 	],
-	"name" : "miniharness",
-	"nameOnDisk" : "miniharness",
+	"name" : "test_loop",
+	"nameOnDisk" : "test_loop",
 	"paths" : 
 	{
 		"build" : ".",
@@ -177,7 +181,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/main.cpp",
+			"path" : "tests/p3/test_loop.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

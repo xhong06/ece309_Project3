@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "test_p2"
+			"path" : "test_p3"
 		}
 	],
 	"backtrace" : 1,
@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 80,
+				"line" : 84,
 				"parent" : 0
 			},
 			{
@@ -39,7 +39,7 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 81,
+				"line" : 85,
 				"parent" : 0
 			},
 			{
@@ -74,7 +74,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-std=c++17"
+					"fragment" : "-g -std=c++17"
 				},
 				{
 					"backtrace" : 4,
@@ -130,11 +130,15 @@
 			"id" : "harness_core::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "test_p2::@6890427a1f51a3e7e1df",
+	"id" : "test_p3::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
 		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
 			{
 				"backtrace" : 2,
 				"fragment" : "-fsanitize=address,undefined",
@@ -155,8 +159,8 @@
 			"id" : "harness_core::@6890427a1f51a3e7e1df"
 		}
 	],
-	"name" : "test_p2",
-	"nameOnDisk" : "test_p2",
+	"name" : "test_p3",
+	"nameOnDisk" : "test_p3",
 	"paths" : 
 	{
 		"build" : ".",
@@ -177,7 +181,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "tests/p2/test_p2.cpp",
+			"path" : "tests/p3/test_p3.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
