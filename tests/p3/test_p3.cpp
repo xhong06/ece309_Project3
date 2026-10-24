@@ -122,11 +122,12 @@ TEST(reg_rejects_duplicate) {
     Tool* raw2 = t2.get();
 
     REQUIRE(r.add(std::move(t)));
-    REQUIRE(r.add(std::move(t2)));
-    CHECK(r.size() == 1);
+    REQUIRE(!(r.add(std::move(t2))));
+    CHECK(r.size() == 1); // The number of tools in the hash table should be 1 since the second .add function 
+    //should return false since it finds the first calculator tool already in the table.
     CHECK(r.find("calculator"));
     Tool* found_tool = r.find("calculator");
-    CHECK(found_tool != raw2);
+    CHECK(found_tool != raw2); // Confirm that the tool that was found is the first tool, not the second tool.
     CHECK(found_tool == raw);
     
 }
@@ -134,12 +135,56 @@ TEST(reg_rejects_duplicate) {
 TEST(reg_rejects_nullptr) {
     ToolRegistry r; 
     auto t = nullptr;
-    REQUIRE(r.add(std::move(t)));
-    CHECK(r.size() == 0);
-    CHECK(r.add(std::move(t)) == false);
+    REQUIRE(!(r.add(std::move(t))));
+    CHECK(r.size() == 0); // Since the tool added was nullptr, it should return false immediately and not increment the size of the ToolRegistry.
+    CHECK(r.add(std::move(t)) == false); // Confirm that the .add function immediately returns false because the tool is nullptr.
 }
     
+TEST(reg_find_absent) {
+    ToolRegistry r;
+    auto t = std::make_unique<NamedTool>("calculator");
+    auto t2 = std::make_unique<NamedTool>("camera");
+    auto t3 = std::make_unique<NamedTool>("web-search");
+    Tool* rp3 = t3.get();
+    REQUIRE(r.add(std::move(t)));
+    REQUIRE(r.add(std::move(t2)));
+    REQUIRE(r.add(std::move(t3)));
+    CHECK(r.size() == 3); // Confirm that the number of tools in the hash table is 3.
+    CHECK(r.find("web-search") == rp3); // Confirm that a tool that was added into the hash table is in fact added correctly.
+    CHECK(r.find("teleport") == nullptr); // Since teleport is not in the hash table, it will return nullptr.
+}
 
+TEST(reg_for_each_visits_once) {
+    ToolRegistry r;
+    auto t = std::make_unique<NamedTool>("calculator");
+    auto t2 = std::make_unique<NamedTool>("camera");
+    auto t3 = std::make_unique<NamedTool>("web-search");
+    auto t4 = std::make_unique<NamedTool>("microwave");
+    auto t5 = std::make_unique<NamedTool>("gps");
+    auto t6 = std::make_unique<NamedTool>("video-call");
+    auto t7 = std::make_unique<NamedTool>("timer");
+    auto t8 = std::make_unique<NamedTool>("stopwatch");
+    
+    std::size_t count = 0;
+    r.for_each([&](const Tool& tool) {               // a lambda: runs once per tool
+        std::printf("%s\n", tool.name().c_str());
+        ++count;                                       // [&] lets it change `count`
+    });
+
+    REQUIRE(r.add(std::move(t)));
+    REQUIRE(r.add(std::move(t2)));
+    REQUIRE(r.add(std::move(t3)));
+    REQUIRE(r.add(std::move(t4)));
+    REQUIRE(r.add(std::move(t5)));
+    REQUIRE(r.add(std::move(t6)));
+    REQUIRE(r.add(std::move(t7)));
+    REQUIRE(r.add(std::move(t8)));
+    CHECK(r.size() == 8);
+    CHECK(r.size() == count);
+
+
+    
+}
 
 
 
