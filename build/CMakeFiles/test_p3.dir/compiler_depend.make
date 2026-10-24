@@ -21,10 +21,12 @@ CMakeFiles/test_p3.dir/tests/p3/test_p3.cpp.o: /home/xande/projects/Project3/P3_
   /usr/include/asm-generic/int-ll64.h \
   /usr/include/asm-generic/posix_types.h \
   /usr/include/asm-generic/types.h \
+  /usr/include/c++/15/algorithm \
   /usr/include/c++/15/array \
   /usr/include/c++/15/backward/auto_ptr.h \
   /usr/include/c++/15/backward/binders.h \
   /usr/include/c++/15/bit \
+  /usr/include/c++/15/bits/algorithmfwd.h \
   /usr/include/c++/15/bits/align.h \
   /usr/include/c++/15/bits/alloc_traits.h \
   /usr/include/c++/15/bits/allocated_ptr.h \
@@ -92,10 +94,12 @@ CMakeFiles/test_p3.dir/tests/p3/test_p3.cpp.o: /home/xande/projects/Project3/P3_
   /usr/include/c++/15/bits/sstream.tcc \
   /usr/include/c++/15/bits/std_abs.h \
   /usr/include/c++/15/bits/std_function.h \
+  /usr/include/c++/15/bits/stl_algo.h \
   /usr/include/c++/15/bits/stl_algobase.h \
   /usr/include/c++/15/bits/stl_bvector.h \
   /usr/include/c++/15/bits/stl_construct.h \
   /usr/include/c++/15/bits/stl_function.h \
+  /usr/include/c++/15/bits/stl_heap.h \
   /usr/include/c++/15/bits/stl_iterator.h \
   /usr/include/c++/15/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/15/bits/stl_iterator_base_types.h \
@@ -113,6 +117,7 @@ CMakeFiles/test_p3.dir/tests/p3/test_p3.cpp.o: /home/xande/projects/Project3/P3_
   /usr/include/c++/15/bits/streambuf_iterator.h \
   /usr/include/c++/15/bits/string_view.tcc \
   /usr/include/c++/15/bits/stringfwd.h \
+  /usr/include/c++/15/bits/uniform_int_dist.h \
   /usr/include/c++/15/bits/unique_ptr.h \
   /usr/include/c++/15/bits/unordered_map.h \
   /usr/include/c++/15/bits/uses_allocator.h \
@@ -160,6 +165,7 @@ CMakeFiles/test_p3.dir/tests/p3/test_p3.cpp.o: /home/xande/projects/Project3/P3_
   /usr/include/c++/15/optional \
   /usr/include/c++/15/ostream \
   /usr/include/c++/15/pstl/execution_defs.h \
+  /usr/include/c++/15/pstl/glue_algorithm_defs.h \
   /usr/include/c++/15/pstl/glue_memory_defs.h \
   /usr/include/c++/15/pstl/pstl_config.h \
   /usr/include/c++/15/ratio \
@@ -375,9 +381,17 @@ CMakeFiles/test_p3.dir/tests/p3/test_p3.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
-/usr/include/c++/15/cstdint:
+/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
+/usr/include/x86_64-linux-gnu/bits/typesizes.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
 /usr/include/c++/15/clocale:
 
@@ -387,13 +401,11 @@ CMakeFiles/test_p3.dir/tests/p3/test_p3.cpp.o:
 
 /usr/include/c++/15/cerrno:
 
-/usr/include/x86_64-linux-gnu/bits/types.h:
-
-/usr/include/c++/15/bits/utility.h:
-
 /usr/include/c++/15/bits/unique_ptr.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
+/usr/include/c++/15/bits/uniform_int_dist.h:
+
+/usr/include/features-time64.h:
 
 /usr/include/c++/15/bits/streambuf_iterator.h:
 
@@ -455,9 +467,9 @@ CMakeFiles/test_p3.dir/tests/p3/test_p3.cpp.o:
 
 /usr/include/c++/15/bits/move.h:
 
-/usr/include/c++/15/bits/shared_ptr.h:
-
 /usr/include/c++/15/bits/fs_path.h:
+
+/usr/include/c++/15/bits/shared_ptr.h:
 
 /usr/lib/x86_64-linux-gnu/libm.so:
 
@@ -497,15 +509,11 @@ CMakeFiles/test_p3.dir/tests/p3/test_p3.cpp.o:
 
 /usr/include/x86_64-linux-gnu/c++/15/bits/time_members.h:
 
+/usr/include/c++/15/algorithm:
+
 /usr/include/c++/15/bits/hash_bytes.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
-
-/usr/include/c++/15/bits/atomic_base.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
-
-/usr/include/c++/15/bits/chrono.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/15/libgcc.a:
 
@@ -514,14 +522,6 @@ CMakeFiles/test_p3.dir/tests/p3/test_p3.cpp.o:
 /usr/include/c++/15/tuple:
 
 /usr/include/asm-generic/errno-base.h:
-
-/usr/lib/x86_64-linux-gnu/libmvec.so.1:
-
-/usr/include/c++/15/bits/stl_iterator_base_types.h:
-
-/usr/include/stdc-predef.h:
-
-/usr/include/c++/15/bits/charconv.h:
 
 /usr/include/c++/15/bits/version.h:
 
@@ -535,8 +535,6 @@ CMakeFiles/test_p3.dir/tests/p3/test_p3.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
-/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
-
 /usr/include/x86_64-linux-gnu/c++/15/bits/ctype_base.h:
 
 /home/xande/projects/Project3/P3_starter/tests/test_helpers.h:
@@ -546,10 +544,6 @@ CMakeFiles/test_p3.dir/tests/p3/test_p3.cpp.o:
 /usr/include/c++/15/cstdlib:
 
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
-
-/usr/include/c++/15/bits/exception_defines.h:
-
-/usr/include/c++/15/backward/auto_ptr.h:
 
 /usr/include/c++/15/bits/stl_iterator.h:
 
@@ -585,15 +579,23 @@ CMakeFiles/test_p3.dir/tests/p3/test_p3.cpp.o:
 
 /usr/include/c++/15/bits/basic_string.tcc:
 
+/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
+
+/usr/include/c++/15/bits/utility.h:
+
+/usr/include/x86_64-linux-gnu/bits/types.h:
+
 /usr/include/c++/15/bits/std_function.h:
 
 /usr/include/c++/15/bits/codecvt.h:
 
-/usr/include/c++/15/bits/string_view.tcc:
-
-/home/xande/projects/Project3/P3_starter/include/tools/workspace.h:
-
 /usr/include/c++/15/initializer_list:
+
+/usr/include/c++/15/bits/algorithmfwd.h:
+
+/usr/include/c++/15/bits/charconv.h:
+
+/usr/include/c++/15/pstl/glue_algorithm_defs.h:
 
 /usr/include/c++/15/bits/ios_base.h:
 
@@ -643,15 +645,31 @@ CMakeFiles/test_p3.dir/tests/p3/test_p3.cpp.o:
 
 /home/xande/projects/Project3/P3_starter/tests/mini_test.h:
 
+/usr/lib/x86_64-linux-gnu/libmvec.so.1:
+
+/usr/include/c++/15/bits/stl_iterator_base_types.h:
+
+/usr/include/stdc-predef.h:
+
+/home/xande/projects/Project3/P3_starter/include/tools/workspace.h:
+
+/usr/include/c++/15/bits/string_view.tcc:
+
+/usr/include/c++/15/bits/atomic_base.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
+
+/usr/include/c++/15/bits/chrono.h:
+
 /usr/include/c++/15/bits/basic_ios.tcc:
 
 /usr/include/linux/sched/types.h:
 
 /usr/include/c++/15/bits/nested_exception.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
-
 /home/xande/projects/Project3/P3_starter/include/tools/tool_registry.h:
+
+/usr/include/c++/15/bits/stl_algo.h:
 
 /usr/include/c++/15/bits/shared_ptr_atomic.h:
 
@@ -665,31 +683,31 @@ CMakeFiles/test_p3.dir/tests/p3/test_p3.cpp.o:
 
 /usr/include/c++/15/bits/stl_tree.h:
 
+/usr/include/c++/15/bits/exception_defines.h:
+
+/usr/include/c++/15/backward/auto_ptr.h:
+
+/usr/include/c++/15/bits/stl_heap.h:
+
 /usr/include/c++/15/bits/cxxabi_init_exception.h:
 
 /usr/include/c++/15/bits/char_traits.h:
 
-/usr/include/c++/15/bits/allocator.h:
-
 /usr/include/asm-generic/posix_types.h:
+
+/usr/include/c++/15/bits/allocator.h:
 
 /usr/include/c++/15/bit:
 
 /usr/include/pthread.h:
 
-/usr/include/c++/15/bits/functional_hash.h:
-
-/usr/include/c++/15/ext/type_traits.h:
-
-/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
-
-/usr/include/c++/15/iomanip:
-
-/usr/include/c++/15/bits/hashtable.h:
-
-/usr/include/c++/15/iterator:
-
 /usr/include/c++/15/bits/locale_facets_nonio.tcc:
+
+/home/xande/projects/Project3/P3_starter/include/model/model_client.h:
+
+/usr/include/c++/15/bits/invoke.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 
 /usr/include/c++/15/bits/stl_function.h:
 
@@ -703,25 +721,31 @@ CMakeFiles/test_p3.dir/tests/p3/test_p3.cpp.o:
 
 /usr/include/c++/15/bits/fstream.tcc:
 
-/home/xande/projects/Project3/P3_starter/include/model/model_client.h:
+/usr/include/c++/15/bits/functional_hash.h:
 
-/usr/include/c++/15/bits/invoke.h:
+/usr/include/c++/15/ext/type_traits.h:
 
-/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
+/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
+
+/usr/include/c++/15/iomanip:
+
+/usr/include/c++/15/bits/hashtable.h:
+
+/usr/include/c++/15/iterator:
+
+/usr/include/c++/15/cstdint:
 
 /usr/include/c++/15/cstdio:
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
-
 /usr/include/c++/15/debug/debug.h:
 
 /usr/include/c++/15/ext/aligned_buffer.h:
 
-/usr/include/c++/15/cwctype:
-
 /home/xande/projects/Project3/P3_starter/tests/p3/test_p3.cpp:
+
+/usr/include/c++/15/cwctype:
 
 /usr/include/x86_64-linux-gnu/asm/types.h:
 
@@ -803,13 +827,11 @@ CMakeFiles/test_p3.dir/tests/p3/test_p3.cpp.o:
 
 /usr/include/endian.h:
 
-/usr/include/c++/15/cstddef:
-
 /usr/include/c++/15/bits/fs_fwd.h:
 
-/usr/include/errno.h:
+/usr/include/c++/15/cstddef:
 
-/usr/include/features-time64.h:
+/usr/include/errno.h:
 
 /usr/include/features.h:
 
@@ -920,7 +942,3 @@ CMakeFiles/test_p3.dir/tests/p3/test_p3.cpp.o:
 /usr/include/asm-generic/errno.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
-
-/usr/include/x86_64-linux-gnu/bits/typesizes.h:

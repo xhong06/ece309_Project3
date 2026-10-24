@@ -224,4 +224,9 @@ CMakeFiles/test_p3.dir/tests/p3/test_p3.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/15/bits/c++io.h \
  /usr/include/c++/15/bits/fstream.tcc /usr/include/c++/15/iterator \
  /usr/include/c++/15/bits/stream_iterator.h /usr/include/c++/15/stdlib.h \
- /home/xande/projects/Project3/P3_starter/include/tools/calculator.h
+ /home/xande/projects/Project3/P3_starter/include/tools/calculator.h \
+ /usr/include/c++/15/algorithm /usr/include/c++/15/bits/stl_algo.h \
+ /usr/include/c++/15/bits/algorithmfwd.h \
+ /usr/include/c++/15/bits/stl_heap.h \
+ /usr/include/c++/15/bits/uniform_int_dist.h \
+ /usr/include/c++/15/pstl/glue_algorithm_defs.h
