@@ -90,3 +90,19 @@ std::size_t ToolRegistry::max_probe_length() const {
     }
     return count; // Return the longest count.
 }
+
+void ToolRegistry::rehash(std::size_t new_buckets_count) {
+    //std::size_t lf = load_factor();
+    buckets_.resize(new_buckets_count);
+    auto new_buckets = std::vector<std::vector<std::unique_ptr<Tool>>>(new_buckets_count);
+    if(size_ + 1 > bucket_count() * MAX_LOAD_FACTOR){
+        std::vector<std::string> tool_names;
+        for(const auto& bucket : buckets_) {
+            for(const auto& entry : bucket){
+                std::size_t index = index_for(entry->name());
+                new_buckets[index].push_back(std::move(entry));
+            //tool_names.push_back(entry->name());
+            }
+        }
+    }
+}

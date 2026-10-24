@@ -75,4 +75,6 @@ private:
     // This function is called when the load factor exceeds the max_load_factor_. It creates a new set of buckets with the specified new_buckets_count, 
     // rehashes all existing tools into the new buckets, and replaces the old buckets with the new ones. This helps maintain efficient access times as the number of tools grows.
     void rehash(std::size_t new_buckets_count);
+    // This constant is the maximum allowed load factor.
+    static constexpr double MAX_LOAD_FACTOR = 1.0;
 };
