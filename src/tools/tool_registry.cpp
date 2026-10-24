@@ -33,6 +33,9 @@ bool ToolRegistry::add(std::unique_ptr<Tool> tool) {
     if(tool_found != nullptr) { // If the tool is present,
         return false; // Then return false.
     } else { // Else, 
+        // If the Load Factor of the Hash Table were to ever cause the Load Factor to Overload, Rehash.
+        if(static_cast<double>(size_ + 1) > static_cast<double>(bucket_count()) * MAX_LOAD_FACTOR) rehash(bucket_count() * 2);  
+        
         buckets_[index_for(tool_name)].push_back(std::move(tool)); // Add the tool into the hash table.
         size_++; // Increment the number of tools in the hash table.
         return true; // Return true.
@@ -53,9 +56,9 @@ Tool* ToolRegistry::find(std::string_view name) const {
         }
     */
 
-    for(const auto& entry : buckets_[index]) { // Check each tool within the bucket at the found index to see if the tool searched for is present. 
-        if(entry->name() == name) { 
-            return entry.get(); // If the tool is found, return a raw pointer pointing to the tool. The unique_ptr<Tool> is dereferenced using the .get() function to get the raw pointer.
+    for(const auto& tool_entry : buckets_[index]) { // Check each tool within the bucket at the found index to see if the tool searched for is present. 
+        if(tool_entry->name() == name) { 
+            return tool_entry.get(); // If the tool is found, return a raw pointer pointing to the tool. The unique_ptr<Tool> is dereferenced using the .get() function to get the raw pointer.
         }
     }
     return nullptr; // If the tool is not found in the bucket, return nullptr, showing that the tool is not registered in the hash table.
@@ -67,8 +70,8 @@ std::size_t ToolRegistry::size() const noexcept {
 
 void ToolRegistry::for_each(const std::function<void(const Tool&)>& fn) const {
     for(const auto& bucket : buckets_) { // Iterate through each bucket in the hash table
-        for(const auto& entry : bucket) { // Iterate through each tool in every bucket
-            fn(*entry); // call fn for each tool
+        for(const auto& tool_entry : bucket) { // Iterate through each tool in every bucket
+            fn(*tool_entry); // call fn for each tool
         }
     }
 }
@@ -91,18 +94,16 @@ std::size_t ToolRegistry::max_probe_length() const {
     return count; // Return the longest count.
 }
 
-void ToolRegistry::rehash(std::size_t new_buckets_count) {
-    //std::size_t lf = load_factor();
-    buckets_.resize(new_buckets_count);
-    auto new_buckets = std::vector<std::vector<std::unique_ptr<Tool>>>(new_buckets_count);
-    if(size_ + 1 > bucket_count() * MAX_LOAD_FACTOR){
-        std::vector<std::string> tool_names;
-        for(const auto& bucket : buckets_) {
-            for(const auto& entry : bucket){
-                std::size_t index = index_for(entry->name());
-                new_buckets[index].push_back(std::move(entry));
-            //tool_names.push_back(entry->name());
-            }
+void ToolRegistry::rehash(std::size_t new_buckets_count) {    
+    std::vector<std::vector<std::unique_ptr<Tool>>> new_set_of_buckets(new_buckets_count);
+    
+    for(auto& bucket : buckets_) {
+        for(auto& tool_entry : bucket){ // Iterate through each tool in each bucket.
+            std::size_t index = hash(tool_entry->name()) & (new_buckets_count - 1);
+            new_set_of_buckets[index].push_back(std::move(tool_entry));
         }
     }
+
+    buckets_ = std::move(new_set_of_buckets);
 }
+
