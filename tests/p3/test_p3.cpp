@@ -104,4 +104,49 @@ TEST(calc_division_by_zero) {
 //   ws_<case>                     REQUIRED: every row of the table in spec §4.4
 //   calc_<case>                   left-to-right, parentheses, negatives
 
+TEST(reg_add_then_find) {
+    ToolRegistry r; 
+    auto t = std::make_unique<NamedTool>("calculator");
+    Tool* raw = t.get();                        // remember the address before moving
+    REQUIRE(r.add(std::move(t)));
+    CHECK(r.size() == 1);
+    CHECK(r.find("calculator") == raw);              // same object, not a copy
+    CHECK(r.find("teleport") == nullptr);
+}
+
+TEST(reg_rejects_duplicate) {
+    ToolRegistry r;
+    auto t = std::make_unique<NamedTool>("calculator");
+    Tool* raw = t.get();
+    auto t2 = std::make_unique<NamedTool>("calculator");
+    Tool* raw2 = t2.get();
+
+    REQUIRE(r.add(std::move(t)));
+    REQUIRE(r.add(std::move(t2)));
+    CHECK(r.size() == 1);
+    CHECK(r.find("calculator"));
+    Tool* found_tool = r.find("calculator");
+    CHECK(found_tool != raw2);
+    CHECK(found_tool == raw);
+    
+}
+
+TEST(reg_rejects_nullptr) {
+    ToolRegistry r; 
+    auto t = nullptr;
+    REQUIRE(r.add(std::move(t)));
+    CHECK(r.size() == 0);
+    CHECK(r.add(std::move(t)) == false);
+}
+    
+
+
+
+
+
+
+
+
+
+
 int main(int argc, char** argv) { return mt::run_all(argc, argv); }
