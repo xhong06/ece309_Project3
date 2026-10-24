@@ -195,6 +195,17 @@ TEST(reg_for_each_visits_once) {
     }
 }
 
+TEST(reg_scale_10000) {
+    ToolRegistry r;
+    std::vector<std::string> tool_names;
+    for(int i = 0; i < 10000; i++) {
+        r.add(std::make_unique<NamedTool>("tool_%d", i));
+        //r.find();
+        CHECK(r.load_factor() <= 1.0);
+    }
+    
+
+}
 
 
 
