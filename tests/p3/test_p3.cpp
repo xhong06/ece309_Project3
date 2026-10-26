@@ -295,6 +295,13 @@ TEST(ws_accepts_non_existent_user_path) {
     CHECK(out == ws.root() / "new" / "dir" / "file.txt");
 }
 
-
+TEST(ws_accepts_level_up_in_name_user_path) {
+    TempDir d;
+    Workspace ws(d.path());
+    fs::path out;
+    std::string reason;
+    REQUIRE(ws.resolve("my..notes.txt", &out, &reason));
+    CHECK(out == ws.root() / "my..notes.txt");
+}
 
 int main(int argc, char** argv) { return mt::run_all(argc, argv); }
