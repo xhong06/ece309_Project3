@@ -268,6 +268,32 @@ TEST(ws_accepts_period_user_path) {
     CHECK(out == ws.root());
 }
 
+TEST(ws_accepts_a_level_up_b_user_path) {
+    TempDir d;
+    Workspace ws(d.path());
+    fs::path out;
+    std::string reason;
+    REQUIRE(ws.resolve("a/../b", &out, &reason));
+    CHECK(out == ws.root() / "b");
+}
+
+TEST(ws_accepts_a_level_up_user_path) {
+    TempDir d;
+    Workspace ws(d.path());
+    fs::path out;
+    std::string reason;
+    REQUIRE(ws.resolve("a/..", &out, &reason));
+    CHECK(out == ws.root());
+}
+
+TEST(ws_accepts_non_existent_user_path) {
+    TempDir d;
+    Workspace ws(d.path());
+    fs::path out;
+    std::string reason;
+    REQUIRE(ws.resolve("new/dir/file.txt", &out, &reason));
+    CHECK(out == ws.root() / "new" / "dir" / "file.txt");
+}
 
 
 
