@@ -32,10 +32,10 @@ bool Workspace::resolve(std::string_view user_path, fs::path* out,
         return false;
     }
 
-    if(n == ".") {  // If the user_path starts with ".", then it is correct.
+    if(n == ".") {  // If the user_path has not failed any of the checks and it is ".", then it is correct and output the root.
         *out = root();
         return true;
-    } else {
+    } else { // Else, the user_path has not failed any of the checks. Output the user_path root and append n to it.
         *out = root() / n;
         return true;
     }

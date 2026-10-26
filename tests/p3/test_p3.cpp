@@ -250,6 +250,15 @@ TEST(ws_accepts_flawless_user_path) { // Confirm that the ws.resolve() accepts a
     CHECK(out == ws.root() / "notes" / "todo.txt");
 }
 
+TEST(ws_accepts_prenormalized_user_path) {
+    TempDir d;
+    Workspace ws(d.path());
+    fs::path out;
+    std::string reason;
+    REQUIRE(ws.resolve("./notes//todo.txt", &out, &reason));   
+    CHECK(out == ws.root() / "notes" / "todo.txt");
+}
+
 
 
 
