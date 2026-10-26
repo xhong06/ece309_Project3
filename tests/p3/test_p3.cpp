@@ -241,7 +241,14 @@ TEST(reg_weak_hash_comparison) {
     std::printf("weak-hash:   Max Chain: %zu  Number of Buckets: %zu\n", fullest_bucket, r.bucket_count());
 }
 
-
+TEST(ws_accepts_flawless_user_path) { // Confirm that the ws.resolve() accepts a flawless user_path.
+    TempDir d;
+    Workspace ws(d.path());
+    fs::path out;
+    std::string reason;
+    REQUIRE(ws.resolve("notes/todo.txt", &out, &reason));   
+    CHECK(out == ws.root() / "notes" / "todo.txt");
+}
 
 
 
