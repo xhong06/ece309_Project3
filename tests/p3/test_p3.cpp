@@ -200,7 +200,7 @@ TEST(reg_scale_10000) {
     std::vector<std::string> tool_names;
     std::vector<Tool*> tool_pointers;
     for(int i = 0; i < 10000; i++) {
-        auto t = std::make_unique<NamedTool>("tool_ " + std::to_string(i));
+        auto t = std::make_unique<NamedTool>("tool_" + std::to_string(i));
         tool_names.push_back(t->name());
         REQUIRE(r.add(std::move(t)));
         tool_pointers.push_back(r.find(tool_names[i]));
@@ -219,8 +219,26 @@ TEST(reg_scale_10000) {
 }
 
 TEST(reg_weak_hash_comparison) {
-    std::vector<int> counts(std::size_t final_bucket_count);
     ToolRegistry r;
+    
+    // FIRST, we place 10000 tools into a FNV-1a Hash Table
+    std::vector<std::string> tool_names;
+    for(int i = 0; i < 10000; i++){
+        auto t = std::make_unique<NamedTool>("tool_" + std::to_string(i));
+        tool_names.push_back(t->name());
+        REQUIRE(r.add(std::move(t)));
+    }
+    std::printf("FNV-1a:   Max Chain: %zu  Number of Buckets: %zu\n", r.max_probe_length(), r.bucket_count());
+    
+    // NEXT, we simulate a second hash table with a much weaker hash. This hash bases its placement off of the first character of the name and size of the name.
+    std::vector<std::size_t> counts(r.bucket_count(), 0);
+    for(int i = 0; i < 10000; i++){
+        counts[(static_cast<unsigned char>(tool_names[i][0]) + tool_names[i].size()) % r.bucket_count()]++;
+    }
+    std::size_t fullest_bucket = *std::max_element(counts.begin(), counts.end());
+    CHECK(fullest_bucket == 9000); // Our anticipated Max Probe Length for the weak hash is 9000 since there are 9000 entries (1000-9999) that have a name with the same length.
+    CHECK(r.max_probe_length() < fullest_bucket); // This check confirms that the weaker hash is weaker: in the weaker hash, at least one bucket will be much more full than any of those in the FNV-1a table.
+    std::printf("weak-hash:   Max Chain: %zu  Number of Buckets: %zu\n", fullest_bucket, r.bucket_count());
 }
 
 
