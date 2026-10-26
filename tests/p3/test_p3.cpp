@@ -304,4 +304,76 @@ TEST(ws_accepts_level_up_in_name_user_path) {
     CHECK(out == ws.root() / "my..notes.txt");
 }
 
+TEST(ws_rejects_empty_user_path) {
+    TempDir d;
+    Workspace ws(d.path());
+    fs::path out;
+    std::string reason;
+    REQUIRE(!(ws.resolve("", &out, &reason)));
+    CHECK(out.empty());
+    CHECK(reason == "empty path");
+}
+
+TEST(ws_rejects_NUL_char_in_user_path) {
+    TempDir d;
+    Workspace ws(d.path());
+    fs::path out;
+    std::string reason;
+    std::string path = std::string("notes") + '\0' + "/x";
+    REQUIRE(!(ws.resolve(path, &out, &reason)));
+    CHECK(out.empty());
+    CHECK(reason == "path contains a NUL byte");
+}
+
+TEST(ws_rejects_absolute_user_path) {
+    TempDir d;
+    Workspace ws(d.path());
+    fs::path out;
+    std::string reason;
+    REQUIRE(!(ws.resolve("/etc/passwd", &out, &reason)));
+    CHECK(out.empty());
+    CHECK(reason == "absolute paths are not allowed; use a workspace-relative path");
+}
+
+TEST(ws_rejects_level_up_user_path) {
+    TempDir d;
+    Workspace ws(d.path());
+    fs::path out;
+    std::string reason;
+    REQUIRE(!(ws.resolve("..", &out, &reason)));
+    CHECK(out.empty());
+    CHECK(reason == "path escapes the workspace");
+}
+
+TEST(ws_rejects_level_up_absolute_user_path) {
+    TempDir d;
+    Workspace ws(d.path());
+    fs::path out;
+    std::string reason;
+    REQUIRE(!(ws.resolve("../etc/passwd", &out, &reason)));
+    CHECK(out.empty());
+    CHECK(reason == "path escapes the workspace");
+}
+
+TEST(ws_rejects_double_level_up_user_path) {
+    TempDir d;
+    Workspace ws(d.path());
+    fs::path out;
+    std::string reason;
+    REQUIRE(!(ws.resolve("a/../../b", &out, &reason)));
+    CHECK(out.empty());
+    CHECK(reason == "path escapes the workspace");
+}
+
+TEST(ws_rejects_leaving_workspace_user_path) {
+    TempDir d;
+    Workspace ws(d.path() / "ws");
+    fs::path out;
+    std::string reason;
+    REQUIRE(!(ws.resolve("notes/../../ws/notes/todo.txt", &out, &reason)));
+    CHECK(out.empty());
+    CHECK(reason == "path escapes the workspace");
+}
+
+
 int main(int argc, char** argv) { return mt::run_all(argc, argv); }
