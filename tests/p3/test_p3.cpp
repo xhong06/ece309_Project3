@@ -259,6 +259,15 @@ TEST(ws_accepts_prenormalized_user_path) {
     CHECK(out == ws.root() / "notes" / "todo.txt");
 }
 
+TEST(ws_accepts_period_user_path) {
+    TempDir d;
+    Workspace ws(d.path());
+    fs::path out;
+    std::string reason;
+    REQUIRE(ws.resolve(".", &out, &reason));
+    CHECK(out == ws.root());
+}
+
 
 
 
