@@ -198,16 +198,30 @@ TEST(reg_for_each_visits_once) {
 TEST(reg_scale_10000) {
     ToolRegistry r;
     std::vector<std::string> tool_names;
+    std::vector<Tool*> tool_pointers;
     for(int i = 0; i < 10000; i++) {
-        r.add(std::make_unique<NamedTool>("tool_%d", i));
-        //r.find();
+        auto t = std::make_unique<NamedTool>("tool_ " + std::to_string(i));
+        tool_names.push_back(t->name());
+        REQUIRE(r.add(std::move(t)));
+        tool_pointers.push_back(r.find(tool_names[i]));
         CHECK(r.load_factor() <= 1.0);
     }
     
+    CHECK(r.size() == 10000);
+    CHECK(r.max_probe_length() <= 64);
+    for(std::size_t i = 0; i < tool_pointers.size(); i++) {
+        CHECK(tool_pointers[i] != nullptr);
+        CHECK(r.find(tool_names[i]) == tool_pointers[i]);
+    }
+
+    std::printf("Load Factor: %f\nMax Probe Length: %zu\nNumber of Buckets: %zu\n", r.load_factor(), r.max_probe_length(), r.bucket_count());
 
 }
 
-
+TEST(reg_weak_hash_comparison) {
+    std::vector<int> counts(std::size_t final_bucket_count);
+    ToolRegistry r;
+}
 
 
 
