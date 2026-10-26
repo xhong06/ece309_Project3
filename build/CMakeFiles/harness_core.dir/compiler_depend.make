@@ -2166,6 +2166,7 @@ CMakeFiles/harness_core.dir/src/tools/calculator_eval.cpp.o: /home/xande/project
   /usr/include/c++/15/bits/concept_check.h \
   /usr/include/c++/15/bits/cpp_type_traits.h \
   /usr/include/c++/15/bits/cxxabi_forced.h \
+  /usr/include/c++/15/bits/deque.tcc \
   /usr/include/c++/15/bits/exception.h \
   /usr/include/c++/15/bits/exception_defines.h \
   /usr/include/c++/15/bits/functexcept.h \
@@ -2188,11 +2189,13 @@ CMakeFiles/harness_core.dir/src/tools/calculator_eval.cpp.o: /home/xande/project
   /usr/include/c++/15/bits/stl_algobase.h \
   /usr/include/c++/15/bits/stl_bvector.h \
   /usr/include/c++/15/bits/stl_construct.h \
+  /usr/include/c++/15/bits/stl_deque.h \
   /usr/include/c++/15/bits/stl_function.h \
   /usr/include/c++/15/bits/stl_iterator.h \
   /usr/include/c++/15/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/15/bits/stl_iterator_base_types.h \
   /usr/include/c++/15/bits/stl_pair.h \
+  /usr/include/c++/15/bits/stl_stack.h \
   /usr/include/c++/15/bits/stl_uninitialized.h \
   /usr/include/c++/15/bits/stl_vector.h \
   /usr/include/c++/15/bits/string_view.tcc \
@@ -2212,6 +2215,7 @@ CMakeFiles/harness_core.dir/src/tools/calculator_eval.cpp.o: /home/xande/project
   /usr/include/c++/15/cwchar \
   /usr/include/c++/15/debug/assertions.h \
   /usr/include/c++/15/debug/debug.h \
+  /usr/include/c++/15/deque \
   /usr/include/c++/15/ext/alloc_traits.h \
   /usr/include/c++/15/ext/numeric_traits.h \
   /usr/include/c++/15/ext/string_conversions.h \
@@ -2220,6 +2224,7 @@ CMakeFiles/harness_core.dir/src/tools/calculator_eval.cpp.o: /home/xande/project
   /usr/include/c++/15/iosfwd \
   /usr/include/c++/15/new \
   /usr/include/c++/15/pstl/pstl_config.h \
+  /usr/include/c++/15/stack \
   /usr/include/c++/15/string \
   /usr/include/c++/15/string_view \
   /usr/include/c++/15/tuple \
@@ -3754,6 +3759,12 @@ CMakeFiles/harness_core.dir/src/tools/workspace_provided.cpp.o: /home/xande/proj
 
 /home/xande/projects/Project3/P3_starter/src/tools/calculator_tokenize.cpp:
 
+/usr/include/c++/15/stack:
+
+/usr/include/c++/15/deque:
+
+/usr/include/c++/15/bits/stl_stack.h:
+
 /home/xande/projects/Project3/P3_starter/src/tools/calculator_eval.cpp:
 
 /usr/include/c++/15/bits/uniform_int_dist.h:
@@ -4053,6 +4064,8 @@ CMakeFiles/harness_core.dir/src/tools/workspace_provided.cpp.o: /home/xande/proj
 /usr/include/linux/stddef.h:
 
 /usr/include/c++/15/bits/locale_classes.h:
+
+/usr/include/c++/15/bits/stl_deque.h:
 
 /usr/include/math.h:
 
@@ -4383,6 +4396,8 @@ CMakeFiles/harness_core.dir/src/tools/workspace_provided.cpp.o: /home/xande/proj
 /usr/include/c++/15/bits/sstream.tcc:
 
 /usr/include/c++/15/bits/stl_raw_storage_iter.h:
+
+/usr/include/c++/15/bits/deque.tcc:
 
 /usr/include/c++/15/bits/stl_tempbuf.h:
 
