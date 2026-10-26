@@ -250,7 +250,7 @@ TEST(ws_accepts_flawless_user_path) { // Confirm that the ws.resolve() accepts a
     CHECK(out == ws.root() / "notes" / "todo.txt");
 }
 
-TEST(ws_accepts_prenormalized_user_path) {
+TEST(ws_accepts_prenormalized_user_path) {  // Confirm that the ws.resolve() accepts a prenormalized user_path.
     TempDir d;
     Workspace ws(d.path());
     fs::path out;
@@ -259,7 +259,7 @@ TEST(ws_accepts_prenormalized_user_path) {
     CHECK(out == ws.root() / "notes" / "todo.txt");
 }
 
-TEST(ws_accepts_period_user_path) {
+TEST(ws_accepts_period_user_path) { // Confirm that the ws.resolve() accepts a '.' user_path.
     TempDir d;
     Workspace ws(d.path());
     fs::path out;
@@ -268,7 +268,7 @@ TEST(ws_accepts_period_user_path) {
     CHECK(out == ws.root());
 }
 
-TEST(ws_accepts_a_level_up_b_user_path) {
+TEST(ws_accepts_a_level_up_b_user_path) { // Confirm that the ws.resolve() accepts a "a/../b" user_path.
     TempDir d;
     Workspace ws(d.path());
     fs::path out;
@@ -277,7 +277,7 @@ TEST(ws_accepts_a_level_up_b_user_path) {
     CHECK(out == ws.root() / "b");
 }
 
-TEST(ws_accepts_a_level_up_user_path) {
+TEST(ws_accepts_a_level_up_user_path) { // Confirm that the ws.resolve() accepts a "a/.." user_path.
     TempDir d;
     Workspace ws(d.path());
     fs::path out;
@@ -286,7 +286,7 @@ TEST(ws_accepts_a_level_up_user_path) {
     CHECK(out == ws.root());
 }
 
-TEST(ws_accepts_non_existent_user_path) {
+TEST(ws_accepts_non_existent_user_path) { // Confirm that the ws.resolve() accepts a user_path that does not exist yet.
     TempDir d;
     Workspace ws(d.path());
     fs::path out;
@@ -295,7 +295,7 @@ TEST(ws_accepts_non_existent_user_path) {
     CHECK(out == ws.root() / "new" / "dir" / "file.txt");
 }
 
-TEST(ws_accepts_level_up_in_name_user_path) {
+TEST(ws_accepts_level_up_in_name_user_path) { // Confirm that the ws.resolve() accepts a user_path that has ".." in the name, but not as a level-up indicator.
     TempDir d;
     Workspace ws(d.path());
     fs::path out;
@@ -304,7 +304,7 @@ TEST(ws_accepts_level_up_in_name_user_path) {
     CHECK(out == ws.root() / "my..notes.txt");
 }
 
-TEST(ws_rejects_empty_user_path) {
+TEST(ws_rejects_empty_user_path) { // Confirm that the ws.resolve() rejects an empty user_path.
     TempDir d;
     Workspace ws(d.path());
     fs::path out;
@@ -314,7 +314,7 @@ TEST(ws_rejects_empty_user_path) {
     CHECK(reason == "empty path");
 }
 
-TEST(ws_rejects_NUL_char_in_user_path) {
+TEST(ws_rejects_NUL_char_in_user_path) { // Confirm that the ws.resolve() rejects a user_path with a \0 in the name.
     TempDir d;
     Workspace ws(d.path());
     fs::path out;
@@ -325,7 +325,7 @@ TEST(ws_rejects_NUL_char_in_user_path) {
     CHECK(reason == "path contains a NUL byte");
 }
 
-TEST(ws_rejects_absolute_user_path) {
+TEST(ws_rejects_absolute_user_path) { // Confirm that the ws.resolve() rejects an absolute user_path.
     TempDir d;
     Workspace ws(d.path());
     fs::path out;
@@ -335,7 +335,7 @@ TEST(ws_rejects_absolute_user_path) {
     CHECK(reason == "absolute paths are not allowed; use a workspace-relative path");
 }
 
-TEST(ws_rejects_level_up_user_path) {
+TEST(ws_rejects_level_up_user_path) { // Confirm that the ws.resolve() rejects a user_path with only a level-up indicator.
     TempDir d;
     Workspace ws(d.path());
     fs::path out;
@@ -345,7 +345,7 @@ TEST(ws_rejects_level_up_user_path) {
     CHECK(reason == "path escapes the workspace");
 }
 
-TEST(ws_rejects_level_up_absolute_user_path) {
+TEST(ws_rejects_level_up_absolute_user_path) { // Confirm that the ws.resolve() rejects an absolute user_path with a level-up indicator before it.
     TempDir d;
     Workspace ws(d.path());
     fs::path out;
@@ -355,7 +355,7 @@ TEST(ws_rejects_level_up_absolute_user_path) {
     CHECK(reason == "path escapes the workspace");
 }
 
-TEST(ws_rejects_double_level_up_user_path) {
+TEST(ws_rejects_double_level_up_user_path) { // Confirm that the ws.resolve() rejects a user_path with a double level-up indicator.
     TempDir d;
     Workspace ws(d.path());
     fs::path out;
@@ -365,7 +365,7 @@ TEST(ws_rejects_double_level_up_user_path) {
     CHECK(reason == "path escapes the workspace");
 }
 
-TEST(ws_rejects_leaving_workspace_user_path) {
+TEST(ws_rejects_leaving_workspace_user_path) { // Confirm that the ws.resolve() rejects a user_path that escapes the workspace by leveling-up beyond the root.
     TempDir d;
     Workspace ws(d.path() / "ws");
     fs::path out;
