@@ -441,10 +441,11 @@ TEST(calc_check_for_recursion) { // Confirm that the calculator outputs properly
     std::string err;
     std::string token_string = "0";
 
+    // Create a long token string using a for loop to evaluate using the eval() function.
     for(int i = 0; i < 10000; i++) {
         token_string += " + 1";
     }
-    CHECK(!eval(token_string, &v, &err));
+    CHECK(eval(token_string, &v, &err));
     CHECK(v == 10000);
 }
 
