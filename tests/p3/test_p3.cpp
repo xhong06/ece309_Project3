@@ -105,6 +105,7 @@ TEST(calc_division_by_zero) {
 //   ws_<case>                     REQUIRED: every row of the table in spec §4.4
 //   calc_<case>                   left-to-right, parentheses, negatives
 
+// ***** REG TESTS *****
 TEST(reg_add_then_find) {
     ToolRegistry r; 
     auto t = std::make_unique<NamedTool>("calculator");
@@ -241,6 +242,9 @@ TEST(reg_weak_hash_comparison) {
     std::printf("weak-hash:   Max Chain: %zu  Number of Buckets: %zu\n", fullest_bucket, r.bucket_count());
 }
 
+
+// ***** WORKSPACE TESTS *****
+
 TEST(ws_accepts_flawless_user_path) { // Confirm that the ws.resolve() accepts a flawless user_path.
     TempDir d;
     Workspace ws(d.path());
@@ -375,5 +379,73 @@ TEST(ws_rejects_leaving_workspace_user_path) { // Confirm that the ws.resolve() 
     CHECK(reason == "path escapes the workspace");
 }
 
+// ***** CALCULATOR TESTS *****
+TEST(calc_double_subtraction) { // Confirm that the calculator completes two subtraction operations from left to right.
+    double v = 0;
+    std::string err;
+    REQUIRE(eval("10 - 4 - 3", &v, &err));
+    CHECK(v == 3);
+}
+
+TEST(calc_double_division) { // Confirm that the calculator completes two division operations from left to right.
+    double v = 0;
+    std::string err;
+    REQUIRE(eval("100 / 10 / 5", &v, &err));
+    CHECK(v == 2);
+}
+
+TEST(calc_paren_add_then_multiply) { // Confirm that the calculator computes the addition within parentheses before multiplication.
+    double v = 0;
+    std::string err;
+    REQUIRE(eval("(2 + 3) * 4", &v, &err));
+    CHECK(v == 20);
+}
+
+TEST(calc_paren_add_before_multiply_or_subtract) { // Confirm that the calculator computes the addition within parentheses before either of the operations before or after it..
+    double v = 0;
+    std::string err;
+    REQUIRE(eval("2 * (3 + 4) - 5", &v, &err));
+    CHECK(v == 9);
+}
+
+TEST(calc_multiply_two_neg_numbers) { // Confirm that the calculator computes the multiplication of two signed negative numbers correctly.
+    double v = 0;
+    std::string err;
+    REQUIRE(eval("-3 * -3", &v, &err));
+    CHECK(v == 9);
+}
+
+TEST(calc_results_in_non_integer) { // Confirm that the calculator computes a non-integer number when required.
+    double v = 0;
+    std::string err;
+    REQUIRE(eval("7 / 2", &v, &err));
+    CHECK(v == 3.5);
+}
+
+TEST(calc_expression_eventually_divides_by_zero) { // Confirm that the calculator catches a divide-by-zero error in a larger expression.
+    double v = 0;
+    std::string err;
+    CHECK(!eval("1 / (2 - 2)", &v, &err));
+    CHECK(err == "division by zero");
+}
+
+TEST(calc_results_in_neg_number) { // Confirm that the calculator outputs a negative number when it results.
+    double v = 0;
+    std::string err;
+    CHECK(!eval("1 / (2 - 2)", &v, &err));
+    CHECK(err == "division by zero");
+}
+
+TEST(calc_check_for_recursion) { // Confirm that the calculator outputs properly when given a massive string of inputs.
+    double v = 0;
+    std::string err;
+    std::string token_string = "0";
+
+    for(int i = 0; i < 10000; i++) {
+        token_string += " + 1";
+    }
+    CHECK(!eval(token_string, &v, &err));
+    CHECK(v == 10000);
+}
 
 int main(int argc, char** argv) { return mt::run_all(argc, argv); }
