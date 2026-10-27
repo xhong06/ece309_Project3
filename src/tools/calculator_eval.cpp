@@ -6,6 +6,8 @@
 
 #include "tools/calculator.h"
 #include <stack>
+#include <string>
+#include <vector>
 
 static int precedence(CalcToken::Kind k){ // This is a helper function that will return the precendence of an operator to use in comparisons for the calc_evaluate function.
     if(k == CalcToken::Kind::Plus) return 1;
@@ -57,4 +59,45 @@ bool calc_evaluate(const std::vector<CalcToken>& tokens, double* out,
     std::stack<double> values;
     std::stack<CalcToken::Kind> ops;
     
+    for(std::size_t i = 0; i < tokens.size(); i++) {
+        if(tokens[i].kind == CalcToken::Kind::Number) {
+            values.push(tokens[i].value);
+        }
+        else if(tokens[i].kind == CalcToken::Kind::LParen) {
+            ops.push(tokens[i].kind);
+        }
+        else if(tokens[i].kind == CalcToken::Kind::RParen) {
+            while(!ops.empty() && (ops.top() != CalcToken::Kind::LParen)) {
+                if(!(apply(values, ops, error))){
+                    return false;
+                }
+            }
+            if(ops.empty()) {
+                *error = "malformed expression";
+                return false;
+            } 
+            ops.pop();
+        }
+        else{
+            while(!ops.empty() && ops.top() != CalcToken::Kind::LParen && (precedence(ops.top()) >= precedence(tokens[i].kind))) {
+                ops.push(tokens[i].kind);
+                if(!(apply(values, ops, error))){
+                    return false;
+                }
+            }
+        }
+    }
+    while(!ops.empty()) {
+        if(!(apply(values, ops, error))){
+            return false;
+        }
+    }
+
+    if(values.size() != 1) {
+        *error = "malformed expression";
+        return false;
+    } else {
+        *out = values.top();
+        return true;
+    }
 }
