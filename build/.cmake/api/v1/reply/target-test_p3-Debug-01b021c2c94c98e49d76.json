@@ -51,6 +51,12 @@
 			{
 				"command" : 3,
 				"file" : 0,
+				"line" : 21,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
 				"line" : 24,
 				"parent" : 0
 			}
@@ -94,10 +100,14 @@
 				},
 				{
 					"backtrace" : 5,
+					"fragment" : "-Werror"
+				},
+				{
+					"backtrace" : 6,
 					"fragment" : "-fsanitize=address,undefined"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 6,
 					"fragment" : "-fno-omit-frame-pointer"
 				}
 			],

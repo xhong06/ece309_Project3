@@ -1,0 +1,158 @@
+Start testing: Oct 26 21:08 EDT
+----------------------------------------------------------
+1/4 Testing: p2_regression
+1/4 Test: p2_regression
+Command: "/home/xande/projects/Project3/P3_starter/build/test_p2"
+Directory: /home/xande/projects/Project3/P3_starter/build
+"p2_regression" start time: Oct 26 21:08 EDT
+Output:
+----------------------------------------------------------
+[PASS] conv_empty
+[PASS] conv_append_and_order
+[PASS] conv_holds_tool_role
+[PASS] conv_range_for
+[PASS] conv_copy_is_deep
+[PASS] conv_move_steals
+[PASS] scan_clean_text
+[PASS] scan_every_split
+[PASS] scan_one_byte_at_a_time
+[PASS] scan_false_alarm
+[PASS] harness_turn_limit
+[PASS] harness_eof
+[PASS] harness_sentinel_halts_and_is_hidden
+[PASS] harness_transcript_round_trip
+
+---- summary ----
+  conv           6 /   6
+  harness        4 /   4
+  scan           4 /   4
+  TOTAL         14 /  14
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"p2_regression" end time: Oct 26 21:08 EDT
+"p2_regression" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/4 Testing: p3
+2/4 Test: p3
+Command: "/home/xande/projects/Project3/P3_starter/build/test_p3"
+Directory: /home/xande/projects/Project3/P3_starter/build
+"p3" start time: Oct 26 21:08 EDT
+Output:
+----------------------------------------------------------
+[PASS] reg_add_and_find
+[PASS] reg_duplicate_keeps_original
+[PASS] ws_rejects_parent_escape
+[PASS] calc_precedence
+[PASS] calc_division_by_zero
+[PASS] reg_add_then_find
+[PASS] reg_rejects_duplicate
+[PASS] reg_rejects_nullptr
+[PASS] reg_find_absent
+microwave
+timer
+web-search
+stopwatch
+calculator
+camera
+gps
+video-call
+[PASS] reg_for_each_visits_once
+Load Factor: 0.610352
+Max Probe Length: 6
+Number of Buckets: 16384
+[PASS] reg_scale_10000
+FNV-1a:   Max Chain: 6  Number of Buckets: 16384
+weak-hash:   Max Chain: 9000  Number of Buckets: 16384
+[PASS] reg_weak_hash_comparison
+[PASS] ws_accepts_flawless_user_path
+[PASS] ws_accepts_prenormalized_user_path
+[PASS] ws_accepts_period_user_path
+[PASS] ws_accepts_a_level_up_b_user_path
+[PASS] ws_accepts_a_level_up_user_path
+[PASS] ws_accepts_non_existent_user_path
+[PASS] ws_accepts_level_up_in_name_user_path
+[PASS] ws_rejects_empty_user_path
+[PASS] ws_rejects_NUL_char_in_user_path
+[PASS] ws_rejects_absolute_user_path
+[PASS] ws_rejects_level_up_user_path
+[PASS] ws_rejects_level_up_absolute_user_path
+[PASS] ws_rejects_double_level_up_user_path
+[PASS] ws_rejects_leaving_workspace_user_path
+[PASS] calc_double_subtraction
+[PASS] calc_double_division
+[PASS] calc_paren_add_then_multiply
+[PASS] calc_paren_add_before_multiply_or_subtract
+[PASS] calc_multiply_two_neg_numbers
+[PASS] calc_results_in_non_integer
+[PASS] calc_expression_eventually_divides_by_zero
+[PASS] calc_results_in_neg_number
+[PASS] calc_check_for_recursion
+
+---- summary ----
+  calc          11 /  11
+  reg            9 /   9
+  ws            15 /  15
+  TOTAL         35 /  35
+<end of output>
+Test time =   0.16 sec
+----------------------------------------------------------
+Test Passed.
+"p3" end time: Oct 26 21:08 EDT
+"p3" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/4 Testing: tool_loop
+3/4 Test: tool_loop
+Command: "/home/xande/projects/Project3/P3_starter/build/test_loop"
+Directory: /home/xande/projects/Project3/P3_starter/build
+"tool_loop" start time: Oct 26 21:08 EDT
+Output:
+----------------------------------------------------------
+[PASS] loop_model_tool_model_without_user_turn
+[PASS] loop_escape_attempt_is_an_error_not_a_crash
+[PASS] loop_chained_tool_rounds
+[PASS] loop_tool_step_limit
+[PASS] loop_without_registry_is_p2_behavior
+[PASS] loop_sentinel_wins_over_tool_call
+[PASS] loop_client_error
+[PASS] loop_system_message_lists_tools
+[PASS] loop_transcript_round_trip_with_tools
+
+---- summary ----
+  loop           9 /   9
+  TOTAL          9 /   9
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"tool_loop" end time: Oct 26 21:08 EDT
+"tool_loop" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/4 Testing: e2e
+4/4 Test: e2e
+Command: "/usr/bin/bash" "/home/xande/projects/Project3/P3_starter/tests/e2e/run_e2e.sh" "/home/xande/projects/Project3/P3_starter/build/miniharness"
+Directory: /home/xande/projects/Project3/P3_starter
+"e2e" start time: Oct 26 21:08 EDT
+Output:
+----------------------------------------------------------
+[PASS] e2e_escape_attempt
+[PASS] e2e_greeting
+[PASS] e2e_malformed_calls
+[PASS] e2e_runaway
+[PASS] e2e_split_test
+[PASS] e2e_tools_demo
+[PASS] e2e_tools_list
+e2e: 7 / 7 passed
+<end of output>
+Test time =   0.13 sec
+----------------------------------------------------------
+Test Passed.
+"e2e" end time: Oct 26 21:08 EDT
+"e2e" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 26 21:08 EDT

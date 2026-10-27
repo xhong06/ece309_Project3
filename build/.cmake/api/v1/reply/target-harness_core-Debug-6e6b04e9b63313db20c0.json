@@ -39,6 +39,12 @@
 			{
 				"command" : 1,
 				"file" : 0,
+				"line" : 21,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
 				"line" : 24,
 				"parent" : 0
 			},
@@ -81,17 +87,21 @@
 				},
 				{
 					"backtrace" : 3,
+					"fragment" : "-Werror"
+				},
+				{
+					"backtrace" : 4,
 					"fragment" : "-fsanitize=address,undefined"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"fragment" : "-fno-omit-frame-pointer"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 4,
+					"backtrace" : 5,
 					"path" : "/home/xande/projects/Project3/P3_starter/include"
 				}
 			],

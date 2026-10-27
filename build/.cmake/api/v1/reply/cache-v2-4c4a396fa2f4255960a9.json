@@ -1151,7 +1151,7 @@
 				}
 			],
 			"type" : "BOOL",
-			"value" : "OFF"
+			"value" : "ON"
 		},
 		{
 			"name" : "MiniHarness_BINARY_DIR",

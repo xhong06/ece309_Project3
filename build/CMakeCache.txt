@@ -216,7 +216,7 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 MH_SANITIZE:BOOL=ON
 
 //Treat warnings as errors (the grader turns this on)
-MH_WERROR:BOOL=OFF
+MH_WERROR:BOOL=ON
 
 //Value Computed by CMake
 MiniHarness_BINARY_DIR:STATIC=/home/xande/projects/Project3/P3_starter/build

@@ -1,127 +1,127 @@
 [
 {
   "directory": "/home/xande/projects/Project3/P3_starter/build",
-  "command": "/usr/bin/g++  -I/home/xande/projects/Project3/P3_starter/include -g -std=c++17 -Wall -Wextra -Wpedantic -g -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/harness_core.dir/src/core/conversation.cpp.o -c /home/xande/projects/Project3/P3_starter/src/core/conversation.cpp",
+  "command": "/usr/bin/g++  -I/home/xande/projects/Project3/P3_starter/include -g -std=c++17 -Wall -Wextra -Wpedantic -g -Werror -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/harness_core.dir/src/core/conversation.cpp.o -c /home/xande/projects/Project3/P3_starter/src/core/conversation.cpp",
   "file": "/home/xande/projects/Project3/P3_starter/src/core/conversation.cpp",
   "output": "CMakeFiles/harness_core.dir/src/core/conversation.cpp.o"
 },
 {
   "directory": "/home/xande/projects/Project3/P3_starter/build",
-  "command": "/usr/bin/g++  -I/home/xande/projects/Project3/P3_starter/include -g -std=c++17 -Wall -Wextra -Wpedantic -g -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/harness_core.dir/src/core/sentinel_scanner.cpp.o -c /home/xande/projects/Project3/P3_starter/src/core/sentinel_scanner.cpp",
+  "command": "/usr/bin/g++  -I/home/xande/projects/Project3/P3_starter/include -g -std=c++17 -Wall -Wextra -Wpedantic -g -Werror -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/harness_core.dir/src/core/sentinel_scanner.cpp.o -c /home/xande/projects/Project3/P3_starter/src/core/sentinel_scanner.cpp",
   "file": "/home/xande/projects/Project3/P3_starter/src/core/sentinel_scanner.cpp",
   "output": "CMakeFiles/harness_core.dir/src/core/sentinel_scanner.cpp.o"
 },
 {
   "directory": "/home/xande/projects/Project3/P3_starter/build",
-  "command": "/usr/bin/g++  -I/home/xande/projects/Project3/P3_starter/include -g -std=c++17 -Wall -Wextra -Wpedantic -g -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/harness_core.dir/src/tools/tool_registry.cpp.o -c /home/xande/projects/Project3/P3_starter/src/tools/tool_registry.cpp",
+  "command": "/usr/bin/g++  -I/home/xande/projects/Project3/P3_starter/include -g -std=c++17 -Wall -Wextra -Wpedantic -g -Werror -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/harness_core.dir/src/tools/tool_registry.cpp.o -c /home/xande/projects/Project3/P3_starter/src/tools/tool_registry.cpp",
   "file": "/home/xande/projects/Project3/P3_starter/src/tools/tool_registry.cpp",
   "output": "CMakeFiles/harness_core.dir/src/tools/tool_registry.cpp.o"
 },
 {
   "directory": "/home/xande/projects/Project3/P3_starter/build",
-  "command": "/usr/bin/g++  -I/home/xande/projects/Project3/P3_starter/include -g -std=c++17 -Wall -Wextra -Wpedantic -g -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/harness_core.dir/src/tools/workspace.cpp.o -c /home/xande/projects/Project3/P3_starter/src/tools/workspace.cpp",
+  "command": "/usr/bin/g++  -I/home/xande/projects/Project3/P3_starter/include -g -std=c++17 -Wall -Wextra -Wpedantic -g -Werror -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/harness_core.dir/src/tools/workspace.cpp.o -c /home/xande/projects/Project3/P3_starter/src/tools/workspace.cpp",
   "file": "/home/xande/projects/Project3/P3_starter/src/tools/workspace.cpp",
   "output": "CMakeFiles/harness_core.dir/src/tools/workspace.cpp.o"
 },
 {
   "directory": "/home/xande/projects/Project3/P3_starter/build",
-  "command": "/usr/bin/g++  -I/home/xande/projects/Project3/P3_starter/include -g -std=c++17 -Wall -Wextra -Wpedantic -g -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/harness_core.dir/src/tools/calculator_eval.cpp.o -c /home/xande/projects/Project3/P3_starter/src/tools/calculator_eval.cpp",
+  "command": "/usr/bin/g++  -I/home/xande/projects/Project3/P3_starter/include -g -std=c++17 -Wall -Wextra -Wpedantic -g -Werror -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/harness_core.dir/src/tools/calculator_eval.cpp.o -c /home/xande/projects/Project3/P3_starter/src/tools/calculator_eval.cpp",
   "file": "/home/xande/projects/Project3/P3_starter/src/tools/calculator_eval.cpp",
   "output": "CMakeFiles/harness_core.dir/src/tools/calculator_eval.cpp.o"
 },
 {
   "directory": "/home/xande/projects/Project3/P3_starter/build",
-  "command": "/usr/bin/g++  -I/home/xande/projects/Project3/P3_starter/include -g -std=c++17 -Wall -Wextra -Wpedantic -g -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/harness_core.dir/src/json/json_value.cpp.o -c /home/xande/projects/Project3/P3_starter/src/json/json_value.cpp",
+  "command": "/usr/bin/g++  -I/home/xande/projects/Project3/P3_starter/include -g -std=c++17 -Wall -Wextra -Wpedantic -g -Werror -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/harness_core.dir/src/json/json_value.cpp.o -c /home/xande/projects/Project3/P3_starter/src/json/json_value.cpp",
   "file": "/home/xande/projects/Project3/P3_starter/src/json/json_value.cpp",
   "output": "CMakeFiles/harness_core.dir/src/json/json_value.cpp.o"
 },
 {
   "directory": "/home/xande/projects/Project3/P3_starter/build",
-  "command": "/usr/bin/g++  -I/home/xande/projects/Project3/P3_starter/include -g -std=c++17 -Wall -Wextra -Wpedantic -g -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/harness_core.dir/src/tools/workspace_provided.cpp.o -c /home/xande/projects/Project3/P3_starter/src/tools/workspace_provided.cpp",
+  "command": "/usr/bin/g++  -I/home/xande/projects/Project3/P3_starter/include -g -std=c++17 -Wall -Wextra -Wpedantic -g -Werror -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/harness_core.dir/src/tools/workspace_provided.cpp.o -c /home/xande/projects/Project3/P3_starter/src/tools/workspace_provided.cpp",
   "file": "/home/xande/projects/Project3/P3_starter/src/tools/workspace_provided.cpp",
   "output": "CMakeFiles/harness_core.dir/src/tools/workspace_provided.cpp.o"
 },
 {
   "directory": "/home/xande/projects/Project3/P3_starter/build",
-  "command": "/usr/bin/g++  -I/home/xande/projects/Project3/P3_starter/include -g -std=c++17 -Wall -Wextra -Wpedantic -g -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/harness_core.dir/src/tools/calculator_tokenize.cpp.o -c /home/xande/projects/Project3/P3_starter/src/tools/calculator_tokenize.cpp",
+  "command": "/usr/bin/g++  -I/home/xande/projects/Project3/P3_starter/include -g -std=c++17 -Wall -Wextra -Wpedantic -g -Werror -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/harness_core.dir/src/tools/calculator_tokenize.cpp.o -c /home/xande/projects/Project3/P3_starter/src/tools/calculator_tokenize.cpp",
   "file": "/home/xande/projects/Project3/P3_starter/src/tools/calculator_tokenize.cpp",
   "output": "CMakeFiles/harness_core.dir/src/tools/calculator_tokenize.cpp.o"
 },
 {
   "directory": "/home/xande/projects/Project3/P3_starter/build",
-  "command": "/usr/bin/g++  -I/home/xande/projects/Project3/P3_starter/include -g -std=c++17 -Wall -Wextra -Wpedantic -g -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/harness_core.dir/src/tools/calculator_tool.cpp.o -c /home/xande/projects/Project3/P3_starter/src/tools/calculator_tool.cpp",
+  "command": "/usr/bin/g++  -I/home/xande/projects/Project3/P3_starter/include -g -std=c++17 -Wall -Wextra -Wpedantic -g -Werror -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/harness_core.dir/src/tools/calculator_tool.cpp.o -c /home/xande/projects/Project3/P3_starter/src/tools/calculator_tool.cpp",
   "file": "/home/xande/projects/Project3/P3_starter/src/tools/calculator_tool.cpp",
   "output": "CMakeFiles/harness_core.dir/src/tools/calculator_tool.cpp.o"
 },
 {
   "directory": "/home/xande/projects/Project3/P3_starter/build",
-  "command": "/usr/bin/g++  -I/home/xande/projects/Project3/P3_starter/include -g -std=c++17 -Wall -Wextra -Wpedantic -g -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/harness_core.dir/src/tools/file_tools.cpp.o -c /home/xande/projects/Project3/P3_starter/src/tools/file_tools.cpp",
+  "command": "/usr/bin/g++  -I/home/xande/projects/Project3/P3_starter/include -g -std=c++17 -Wall -Wextra -Wpedantic -g -Werror -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/harness_core.dir/src/tools/file_tools.cpp.o -c /home/xande/projects/Project3/P3_starter/src/tools/file_tools.cpp",
   "file": "/home/xande/projects/Project3/P3_starter/src/tools/file_tools.cpp",
   "output": "CMakeFiles/harness_core.dir/src/tools/file_tools.cpp.o"
 },
 {
   "directory": "/home/xande/projects/Project3/P3_starter/build",
-  "command": "/usr/bin/g++  -I/home/xande/projects/Project3/P3_starter/include -g -std=c++17 -Wall -Wextra -Wpedantic -g -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/harness_core.dir/src/tools/builtin_tools.cpp.o -c /home/xande/projects/Project3/P3_starter/src/tools/builtin_tools.cpp",
+  "command": "/usr/bin/g++  -I/home/xande/projects/Project3/P3_starter/include -g -std=c++17 -Wall -Wextra -Wpedantic -g -Werror -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/harness_core.dir/src/tools/builtin_tools.cpp.o -c /home/xande/projects/Project3/P3_starter/src/tools/builtin_tools.cpp",
   "file": "/home/xande/projects/Project3/P3_starter/src/tools/builtin_tools.cpp",
   "output": "CMakeFiles/harness_core.dir/src/tools/builtin_tools.cpp.o"
 },
 {
   "directory": "/home/xande/projects/Project3/P3_starter/build",
-  "command": "/usr/bin/g++  -I/home/xande/projects/Project3/P3_starter/include -g -std=c++17 -Wall -Wextra -Wpedantic -g -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/harness_core.dir/src/harness/tool_dispatcher.cpp.o -c /home/xande/projects/Project3/P3_starter/src/harness/tool_dispatcher.cpp",
+  "command": "/usr/bin/g++  -I/home/xande/projects/Project3/P3_starter/include -g -std=c++17 -Wall -Wextra -Wpedantic -g -Werror -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/harness_core.dir/src/harness/tool_dispatcher.cpp.o -c /home/xande/projects/Project3/P3_starter/src/harness/tool_dispatcher.cpp",
   "file": "/home/xande/projects/Project3/P3_starter/src/harness/tool_dispatcher.cpp",
   "output": "CMakeFiles/harness_core.dir/src/harness/tool_dispatcher.cpp.o"
 },
 {
   "directory": "/home/xande/projects/Project3/P3_starter/build",
-  "command": "/usr/bin/g++  -I/home/xande/projects/Project3/P3_starter/include -g -std=c++17 -Wall -Wextra -Wpedantic -g -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/harness_core.dir/src/harness/harness.cpp.o -c /home/xande/projects/Project3/P3_starter/src/harness/harness.cpp",
+  "command": "/usr/bin/g++  -I/home/xande/projects/Project3/P3_starter/include -g -std=c++17 -Wall -Wextra -Wpedantic -g -Werror -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/harness_core.dir/src/harness/harness.cpp.o -c /home/xande/projects/Project3/P3_starter/src/harness/harness.cpp",
   "file": "/home/xande/projects/Project3/P3_starter/src/harness/harness.cpp",
   "output": "CMakeFiles/harness_core.dir/src/harness/harness.cpp.o"
 },
 {
   "directory": "/home/xande/projects/Project3/P3_starter/build",
-  "command": "/usr/bin/g++  -I/home/xande/projects/Project3/P3_starter/include -g -std=c++17 -Wall -Wextra -Wpedantic -g -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/harness_core.dir/src/harness/transcript.cpp.o -c /home/xande/projects/Project3/P3_starter/src/harness/transcript.cpp",
+  "command": "/usr/bin/g++  -I/home/xande/projects/Project3/P3_starter/include -g -std=c++17 -Wall -Wextra -Wpedantic -g -Werror -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/harness_core.dir/src/harness/transcript.cpp.o -c /home/xande/projects/Project3/P3_starter/src/harness/transcript.cpp",
   "file": "/home/xande/projects/Project3/P3_starter/src/harness/transcript.cpp",
   "output": "CMakeFiles/harness_core.dir/src/harness/transcript.cpp.o"
 },
 {
   "directory": "/home/xande/projects/Project3/P3_starter/build",
-  "command": "/usr/bin/g++  -I/home/xande/projects/Project3/P3_starter/include -g -std=c++17 -Wall -Wextra -Wpedantic -g -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/harness_core.dir/src/model/model_client.cpp.o -c /home/xande/projects/Project3/P3_starter/src/model/model_client.cpp",
+  "command": "/usr/bin/g++  -I/home/xande/projects/Project3/P3_starter/include -g -std=c++17 -Wall -Wextra -Wpedantic -g -Werror -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/harness_core.dir/src/model/model_client.cpp.o -c /home/xande/projects/Project3/P3_starter/src/model/model_client.cpp",
   "file": "/home/xande/projects/Project3/P3_starter/src/model/model_client.cpp",
   "output": "CMakeFiles/harness_core.dir/src/model/model_client.cpp.o"
 },
 {
   "directory": "/home/xande/projects/Project3/P3_starter/build",
-  "command": "/usr/bin/g++  -I/home/xande/projects/Project3/P3_starter/include -g -std=c++17 -Wall -Wextra -Wpedantic -g -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/harness_core.dir/src/model/scripted_client.cpp.o -c /home/xande/projects/Project3/P3_starter/src/model/scripted_client.cpp",
+  "command": "/usr/bin/g++  -I/home/xande/projects/Project3/P3_starter/include -g -std=c++17 -Wall -Wextra -Wpedantic -g -Werror -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/harness_core.dir/src/model/scripted_client.cpp.o -c /home/xande/projects/Project3/P3_starter/src/model/scripted_client.cpp",
   "file": "/home/xande/projects/Project3/P3_starter/src/model/scripted_client.cpp",
   "output": "CMakeFiles/harness_core.dir/src/model/scripted_client.cpp.o"
 },
 {
   "directory": "/home/xande/projects/Project3/P3_starter/build",
-  "command": "/usr/bin/g++  -I/home/xande/projects/Project3/P3_starter/include -g -std=c++17 -Wall -Wextra -Wpedantic -g -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/harness_core.dir/src/model/replay_client.cpp.o -c /home/xande/projects/Project3/P3_starter/src/model/replay_client.cpp",
+  "command": "/usr/bin/g++  -I/home/xande/projects/Project3/P3_starter/include -g -std=c++17 -Wall -Wextra -Wpedantic -g -Werror -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/harness_core.dir/src/model/replay_client.cpp.o -c /home/xande/projects/Project3/P3_starter/src/model/replay_client.cpp",
   "file": "/home/xande/projects/Project3/P3_starter/src/model/replay_client.cpp",
   "output": "CMakeFiles/harness_core.dir/src/model/replay_client.cpp.o"
 },
 {
   "directory": "/home/xande/projects/Project3/P3_starter/build",
-  "command": "/usr/bin/g++  -I/home/xande/projects/Project3/P3_starter/include -g -std=c++17 -Wall -Wextra -Wpedantic -g -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/miniharness.dir/src/main.cpp.o -c /home/xande/projects/Project3/P3_starter/src/main.cpp",
+  "command": "/usr/bin/g++  -I/home/xande/projects/Project3/P3_starter/include -g -std=c++17 -Wall -Wextra -Wpedantic -g -Werror -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/miniharness.dir/src/main.cpp.o -c /home/xande/projects/Project3/P3_starter/src/main.cpp",
   "file": "/home/xande/projects/Project3/P3_starter/src/main.cpp",
   "output": "CMakeFiles/miniharness.dir/src/main.cpp.o"
 },
 {
   "directory": "/home/xande/projects/Project3/P3_starter/build",
-  "command": "/usr/bin/g++  -I/home/xande/projects/Project3/P3_starter/include -g -std=c++17 -Wall -Wextra -Wpedantic -g -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/test_p2.dir/tests/p2/test_p2.cpp.o -c /home/xande/projects/Project3/P3_starter/tests/p2/test_p2.cpp",
+  "command": "/usr/bin/g++  -I/home/xande/projects/Project3/P3_starter/include -g -std=c++17 -Wall -Wextra -Wpedantic -g -Werror -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/test_p2.dir/tests/p2/test_p2.cpp.o -c /home/xande/projects/Project3/P3_starter/tests/p2/test_p2.cpp",
   "file": "/home/xande/projects/Project3/P3_starter/tests/p2/test_p2.cpp",
   "output": "CMakeFiles/test_p2.dir/tests/p2/test_p2.cpp.o"
 },
 {
   "directory": "/home/xande/projects/Project3/P3_starter/build",
-  "command": "/usr/bin/g++  -I/home/xande/projects/Project3/P3_starter/include -g -std=c++17 -Wall -Wextra -Wpedantic -g -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/test_p3.dir/tests/p3/test_p3.cpp.o -c /home/xande/projects/Project3/P3_starter/tests/p3/test_p3.cpp",
+  "command": "/usr/bin/g++  -I/home/xande/projects/Project3/P3_starter/include -g -std=c++17 -Wall -Wextra -Wpedantic -g -Werror -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/test_p3.dir/tests/p3/test_p3.cpp.o -c /home/xande/projects/Project3/P3_starter/tests/p3/test_p3.cpp",
   "file": "/home/xande/projects/Project3/P3_starter/tests/p3/test_p3.cpp",
   "output": "CMakeFiles/test_p3.dir/tests/p3/test_p3.cpp.o"
 },
 {
   "directory": "/home/xande/projects/Project3/P3_starter/build",
-  "command": "/usr/bin/g++  -I/home/xande/projects/Project3/P3_starter/include -g -std=c++17 -Wall -Wextra -Wpedantic -g -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/test_loop.dir/tests/p3/test_loop.cpp.o -c /home/xande/projects/Project3/P3_starter/tests/p3/test_loop.cpp",
+  "command": "/usr/bin/g++  -I/home/xande/projects/Project3/P3_starter/include -g -std=c++17 -Wall -Wextra -Wpedantic -g -Werror -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/test_loop.dir/tests/p3/test_loop.cpp.o -c /home/xande/projects/Project3/P3_starter/tests/p3/test_loop.cpp",
   "file": "/home/xande/projects/Project3/P3_starter/tests/p3/test_loop.cpp",
   "output": "CMakeFiles/test_loop.dir/tests/p3/test_loop.cpp.o"
 }
