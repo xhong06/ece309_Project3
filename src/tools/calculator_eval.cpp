@@ -59,44 +59,60 @@ bool calc_evaluate(const std::vector<CalcToken>& tokens, double* out,
     std::stack<double> values;
     std::stack<CalcToken::Kind> ops;
     
+    // Iterate through all tokens
     for(std::size_t i = 0; i < tokens.size(); i++) {
+        // If the token is a Number,
         if(tokens[i].kind == CalcToken::Kind::Number) {
-            values.push(tokens[i].value);
+            values.push(tokens[i].value); // Add the number's value to the value's stack.
         }
+        // If the token is a Left Parentheses,
         else if(tokens[i].kind == CalcToken::Kind::LParen) {
-            ops.push(tokens[i].kind);
+            ops.push(tokens[i].kind); // Then push the Left Parentheses to the tokens list.
         }
+        // If the token is a Right Parentheses,
         else if(tokens[i].kind == CalcToken::Kind::RParen) {
             while(!ops.empty() && (ops.top() != CalcToken::Kind::LParen)) {
-                if(!(apply(values, ops, error))){
+                // Then apply the operators in the ops stack until you reach the Left Parentheses on the ops stack.
+                if(!(apply(values, ops, error))){ 
                     return false;
                 }
             }
-            if(ops.empty()) {
+            // If the ops stack is empty, then return before trying to pop.
+            if(ops.empty()) { 
                 *error = "malformed expression";
                 return false;
             } 
+            // Pop the Left Parentheses.
             ops.pop();
         }
+        // If the token is a +,-,*,/
         else{
             while(!ops.empty() && ops.top() != CalcToken::Kind::LParen && (precedence(ops.top()) >= precedence(tokens[i].kind))) {
-                ops.push(tokens[i].kind);
+                // Then apply the operator on the top of the ops stack if that operator is of greater precedence than the operator about to be added.
                 if(!(apply(values, ops, error))){
                     return false;
                 }
             }
+            // Push the token operator that you compared onto the stack to be evaluated in a future cycle.
+            ops.push(tokens[i].kind);
         }
     }
+
+    // After all tokens have been parsed,
+    // While there are still operators in the ops stack,
     while(!ops.empty()) {
+        // apply them until there are no more operators left.
         if(!(apply(values, ops, error))){
             return false;
         }
     }
 
+    // Ensure that all the operators shrank the number of values down to 1.
     if(values.size() != 1) {
         *error = "malformed expression";
         return false;
     } else {
+        // Return the final value through *out.
         *out = values.top();
         return true;
     }
