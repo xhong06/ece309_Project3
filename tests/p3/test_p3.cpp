@@ -432,8 +432,8 @@ TEST(calc_expression_eventually_divides_by_zero) { // Confirm that the calculato
 TEST(calc_results_in_neg_number) { // Confirm that the calculator outputs a negative number when it results.
     double v = 0;
     std::string err;
-    CHECK(!eval("1 / (2 - 2)", &v, &err));
-    CHECK(err == "division by zero");
+    CHECK(eval("7 - 10", &v, &err));
+    CHECK(v == -3);
 }
 
 TEST(calc_check_for_recursion) { // Confirm that the calculator outputs properly when given a massive string of inputs.
